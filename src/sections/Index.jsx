@@ -1,8 +1,13 @@
+import About from "./about/About"
+import Banner from "./banner/Banner"
 
 const Index = () => {
     return (
-        <div>
-        </div>
+        <>
+            <Banner />
+            <About />
+
+        </>
     )
 }
 

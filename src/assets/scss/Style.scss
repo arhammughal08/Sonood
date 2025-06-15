@@ -1,3 +1,59 @@
 @import './common';
 
 
+/******************************************* Banner__UI *********************************/
+
+
+.banner__wrapper {
+
+    // height: calc(100vh - 0px);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 100px;
+
+    &--content {
+        padding: 0 20px;
+        width: 80%;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    &--img {
+
+        img {
+            transform: scaleX(-1);
+        }
+    }
+}
+
+.about__wrapper {
+    padding: 100px 0;
+
+
+    &--content {}
+
+    &--border {
+        padding: 18px 24px;
+        border-radius: 8px;
+        border: 2px solid var(--theme-color);
+    }
+
+
+}
+
+/******************************************* RTL__UI *********************************/
+
+.rtl {
+
+    .banner__wrapper {
+        &--img {
+            img {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+}

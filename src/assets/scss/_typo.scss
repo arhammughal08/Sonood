@@ -1,7 +1,7 @@
 html {
     width: 100%;
     position: relative;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -19,7 +19,8 @@ body {
     font-style: normal;
     overflow-x: hidden;
     box-sizing: border-box;
-    font-family: var(--regular);
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight-regular);
     background-color: var(--white);
 }
 
@@ -40,6 +41,7 @@ li {
 a {
     text-decoration: none;
     cursor: pointer;
+    font-family: var(--primary-font);
 }
 
 a,
@@ -82,7 +84,8 @@ h4 {
 p {
     font-size: 16px;
     font-family: var(--regular);
-    padding-bottom: 12px;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 *::-moz-selection {
@@ -106,7 +109,7 @@ p {
 
 
 .container {
-    max-width: calc(100% - 50px) !important;
+    max-width: calc(100% - 40px) !important;
 
     @media (min-width: 1580px) {
         max-width: 1520px !important;
@@ -129,4 +132,8 @@ body .rtl {
     position: relative;
     font-family: var(--arRegular);
     font-weight: var(--font-weight-medium);
+}
+
+.rtl a {
+    font-family: var(--arRegular);
 }

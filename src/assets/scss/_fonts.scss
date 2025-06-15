@@ -1,74 +1,55 @@
 /****************English Fonts***************/
 
-
 @font-face {
-    font-family: 'GeneralSans-Light';
+    font-family: 'General Sans';
     src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
         url('../fonts/GeneralSans-Light.woff') format('woff'),
         url('../fonts/GeneralSans-Light.ttf') format('truetype');
     font-weight: 300;
-    font-display: swap;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'GeneralSans-Regular';
-    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
-        url('../fonts/GeneralSans-Regular.woff') format('woff'),
-        url('../fonts/GeneralSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GeneralSans-Medium';
-    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
-        url('../fonts/GeneralSans-Medium.woff') format('woff'),
-        url('../fonts/GeneralSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GeneralSans-Semibold';
+    font-family: 'General Sans';
     src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
         url('../fonts/GeneralSans-Semibold.woff') format('woff'),
         url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
     font-weight: 600;
-    font-display: swap;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'GeneralSans-Bold';
+    font-family: 'General Sans';
     src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
         url('../fonts/GeneralSans-Bold.woff') format('woff'),
         url('../fonts/GeneralSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
+    font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
-
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 700.0;
-*
-* available axes:
-'wght' (range from 200.0 to 700.0
-*/
 
 @font-face {
-    font-family: 'GeneralSans-Variable';
-    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
-        url('../fonts/GeneralSans-Variable.woff') format('woff'),
-        url('../fonts/GeneralSans-Variable.ttf') format('truetype');
-    font-weight: 200 700;
-    font-display: swap;
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Regular.woff') format('woff'),
+        url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Medium.woff') format('woff'),
+        url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 /****************Arabic Fonts***************/
@@ -155,18 +136,25 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'SimahzazaarabicW05';
+    src: url('../fonts/arabicFonts/SimahzazaarabicW05-Bold.woff2') format('woff2'),
+        url('../fonts/arabicFonts/SimahzazaarabicW05-Bold.woff') format('woff'),
+        url('../fonts/arabicFonts/SimahzazaarabicW05-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 :root {
- 
-    
-    --light: "GeneralSans-Light",
-    --regular:"GeneralSans-Regular",
-    --medium:"GeneralSans-Medium",
-    --semiBold:"GeneralSans-Semibold",
-    --bold:"GeneralSans-Bold",
-    --variables:"GeneralSans-Variable",
 
 
+
+    --primary-font: "General Sans";
+
+
+    // arabic
 
     --arThin: "Noto Kufi Arabic Thin";
     --arExtraLight: "Noto Kufi Arabic ExtraLight";
@@ -174,7 +162,7 @@
     --arRegular: "Noto Kufi Arabic Regular";
     --arMedium: "Noto Kufi Arabic Medium";
     --arSemiBold: "Noto Kufi Arabic SemiBold";
-    --arBold: "Noto Kufi Arabic Bold";
+    --arBold: "SimahzazaarabicW05";
     --arExtraBold: "Noto Kufi Arabic ExtraBold";
     --arBlack: "Noto Kufi Arabic Black";
 }

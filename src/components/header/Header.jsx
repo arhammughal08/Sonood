@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavDataConfig } from "../data/Data";
 import { Container, Row } from "react-bootstrap";
-import { Box, List, ListItem, Span } from "../../UI/Elements";
+import { Box, ButtonStyled, LazyImage, List, ListItem, Span } from "../../UI/Elements";
 import { Link } from "react-scroll";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { BsJustify, BsX } from "react-icons/bs";
 import { Navbar } from "./Styled";
-import ChangeButton from "../../languages/ChangeButton";
 import { RiTwitterXLine } from "react-icons/ri";
+import { Logo } from "../../UI/AllImages";
 
 const Header = () => {
     const WhatsApp = () => {
@@ -23,7 +23,7 @@ const Header = () => {
 
     const handleToggle = () => {
         setToggle(!toggle);
-        const element = document.querySelector(".nav-bar-list");
+        const element = document.querySelector(".navbar__nav--list");
         element.classList.toggle("showToggle");
     };
 
@@ -42,16 +42,16 @@ const Header = () => {
     }, []);
     const socialIcon = [
         {
-            img: <RiTwitterXLine />,
+            img: <RiTwitterXLine size="18px" color="var(--theme-color)" />,
             link: 'https://x.com/altaif2024?s=21&t=Wq0RMCoJloRUNeSTcfLPrg',
         },
 
         {
-            img: <FaInstagram />,
+            img: <FaInstagram size="18px" color="var(--theme-color)" />,
             link: 'https://www.instagram.com/eltayef.sa/profilecard/?igsh=MWZ4c3Y1dmw0dXpreg==',
         },
         {
-            img: <FaLinkedin />,
+            img: <FaLinkedin size="18px" color="var(--theme-color)" />,
             link: 'https://www.snapchat.com/add/eltayef.sa?share_id=1vRxAMusgk4&locale=ar-AE',
         },
 
@@ -59,11 +59,17 @@ const Header = () => {
 
     return (
 
-        <Navbar className={`navbar ${isSticky ? 'sticky' : ''} container-fluid`}>
+        <Navbar className={`${isSticky ? 'sticky' : ''}`}>
             <Container>
-                <Row>
+                <Row className="w-100">
                     <Box className='navbar__nav'>
+                        <Box className="navbar__nav--brand">
+                            <LazyImage src={Logo} />
+                        </Box>
                         <List className='navbar__nav--list'>
+                            <Box className="d-none d-md-block">
+                                <LazyImage src={Logo} />
+                            </Box>
                             {NavDataConfig.map((item, key) => (
                                 <ListItem key={key} className="navbar__nav--list-items">
                                     <Link to={item.to} spy={true} smooth={true} offset={-60} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
@@ -71,6 +77,10 @@ const Header = () => {
                             ))}
                         </List>
                         <Box className='navbar__nav--social'>
+                            <ButtonStyled className="btn btn-primary">
+                                <FaPhoneAlt />
+                                <Span>+966 000 000 000</Span>
+                            </ButtonStyled>
                             <Box className='navbar__nav--social-icon'>
                                 {
                                     socialIcon.map((list, key) => (
@@ -89,7 +99,7 @@ const Header = () => {
                     </Box>
                 </Row>
             </Container>
-            <ChangeButton />
+
         </Navbar>
 
     )

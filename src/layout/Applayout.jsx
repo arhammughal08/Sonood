@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Footer, Header } from "../components"
+import { ChangeButton, Footer, Header } from "../components"
 import { Outlet, useLocation } from "react-router-dom"
 import { useEffect } from "react";
 
@@ -13,8 +13,8 @@ const Applayout = () => {
         <Wrapper>
             <Header />
             <Outlet />
-            {/* <Footer /> */}
-
+            <Footer />
+            <ChangeButton />
         </Wrapper>
     )
 }
@@ -22,4 +22,6 @@ const Applayout = () => {
 export default Applayout
 
 const Wrapper = styled.div`
+    width:100%;
+    overflow-x:hidden;
 `
