@@ -1,0 +1,347 @@
+/****************English Fonts***************/
+@font-face {
+  font-family: "GeneralSans-Light";
+  src: url("../fonts/GeneralSans-Light.woff2") format("woff2"), url("../fonts/GeneralSans-Light.woff") format("woff"), url("../fonts/GeneralSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans-Regular";
+  src: url("../fonts/GeneralSans-Regular.woff2") format("woff2"), url("../fonts/GeneralSans-Regular.woff") format("woff"), url("../fonts/GeneralSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans-Medium";
+  src: url("../fonts/GeneralSans-Medium.woff2") format("woff2"), url("../fonts/GeneralSans-Medium.woff") format("woff"), url("../fonts/GeneralSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans-Semibold";
+  src: url("../fonts/GeneralSans-Semibold.woff2") format("woff2"), url("../fonts/GeneralSans-Semibold.woff") format("woff"), url("../fonts/GeneralSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans-Bold";
+  src: url("../fonts/GeneralSans-Bold.woff2") format("woff2"), url("../fonts/GeneralSans-Bold.woff") format("woff"), url("../fonts/GeneralSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: "GeneralSans-Variable";
+  src: url("../fonts/GeneralSans-Variable.woff2") format("woff2"), url("../fonts/GeneralSans-Variable.woff") format("woff"), url("../fonts/GeneralSans-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+/****************Arabic Fonts***************/
+@font-face {
+  font-family: "Noto Kufi Arabic Thin";
+  src: url("../fonts/arabic/NotoKufiArabic-Thin.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic ExtraLight";
+  src: url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic Light";
+  src: url("../fonts/arabic/NotoKufiArabic-Light.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic Regular";
+  src: url("../fonts/arabic/NotoKufiArabic-Regular.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic Medium";
+  src: url("../fonts/arabic/NotoKufiArabic-Medium.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic SemiBold";
+  src: url("../fonts/arabic/NotoKufiArabic-SemiBold.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic Bold";
+  src: url("../fonts/arabic/NotoKufiArabic-Bold.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic ExtraBold";
+  src: url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Kufi Arabic Black";
+  src: url("../fonts/arabic/NotoKufiArabic-Black.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --light: "GeneralSans-Light",
+  --regular:"GeneralSans-Regular",
+  --medium:"GeneralSans-Medium",
+  --semiBold:"GeneralSans-Semibold",
+  --bold:"GeneralSans-Bold",
+  --variables:"GeneralSans-Variable",
+  --arThin: "Noto Kufi Arabic Thin";
+  --arExtraLight: "Noto Kufi Arabic ExtraLight";
+  --arLight: "Noto Kufi Arabic Light";
+  --arRegular: "Noto Kufi Arabic Regular";
+  --arMedium: "Noto Kufi Arabic Medium";
+  --arSemiBold: "Noto Kufi Arabic SemiBold";
+  --arBold: "Noto Kufi Arabic Bold";
+  --arExtraBold: "Noto Kufi Arabic ExtraBold";
+  --arBlack: "Noto Kufi Arabic Black";
+}
+
+.btn {
+  font-weight: var(--font-weight-bold);
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn a {
+  color: var(--theme-color);
+}
+.btn:hover, .btn:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.btn.btn-primary {
+  background-color: var(--white);
+  color: var(--theme-color);
+  border: none;
+}
+.btn.btn-primary:hover {
+  background-color: var(--theme-color);
+  color: var(--white);
+}
+.btn.btn-secondary {
+  background-color: var(--theme-color);
+  color: var(--white);
+  border: none;
+}
+.btn.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--theme-color);
+}
+.btn.btn-outline-primary {
+  background: transparent;
+  border: 2px solid var(--theme-color);
+  color: var(--theme-color);
+}
+.btn.btn-outline-primary:hover {
+  background: var(--theme-color);
+  color: var(--white);
+}
+.btn.btn-outline-secondary {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+.btn.btn-outline-secondary:hover {
+  background: var(--white);
+  color: var(--theme-color);
+}
+
+:root {
+  --white: #fff;
+  --theme-color: #281449;
+  --light-blue: #9CB2DE;
+  --gray: #636363;
+  --gradiant: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  --lightGreen: #25D366;
+  --darkGreen: #199D00;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+  --h1: 48px;
+  --h2: 40px;
+  --h3: 24px;
+  --h4: 20px;
+  --transition-speed: 0.3s;
+}
+
+html {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  position: relative;
+  font-style: normal;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: var(--regular);
+  background-color: var(--white);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a,
+.btn {
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-bold);
+  color: var(--theme-color);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+p {
+  font-size: 16px;
+  font-family: var(--regular);
+  padding-bottom: 12px;
+}
+
+*::-moz-selection {
+  background: var(--theme-color);
+  color: var(--white);
+  text-shadow: none;
+}
+
+*::-moz-selection {
+  background: var(--theme-color) none repeat scroll 0 0;
+  color: var(--white);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--theme-color);
+  color: var(--white);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--theme-color);
+  color: var(--white);
+  text-shadow: none;
+}
+
+.container {
+  max-width: calc(100% - 50px) !important;
+}
+@media (min-width: 1580px) {
+  .container {
+    max-width: 1520px !important;
+  }
+}
+@media (max-width: 568px) {
+  .container {
+    max-width: calc(100% - 0px) !important;
+  }
+}
+
+/************************************************ RTL DIrection*************************/
+html[dir=rtl] {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body .rtl {
+  position: relative;
+  font-family: var(--arRegular);
+  font-weight: var(--font-weight-medium);
+}/*# sourceMappingURL=Style.css.map */

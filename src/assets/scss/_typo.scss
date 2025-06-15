@@ -1,0 +1,132 @@
+html {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    position: relative;
+    font-style: normal;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: var(--regular);
+    background-color: var(--white);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a,
+.btn {
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: var(--font-weight-bold);
+    color: var(--theme-color);
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+h4 {
+    font-size: var(--h4);
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--regular);
+    padding-bottom: 12px;
+}
+
+*::-moz-selection {
+    background: var(--theme-color);
+    color: var(--white);
+    text-shadow: none
+}
+
+*::-moz-selection {
+    background: var(--theme-color) none repeat scroll 0 0;
+    color: var(--white);
+    text-shadow: none
+}
+
+::selection {
+    background: var(--theme-color);
+    color: var(--white);
+    text-shadow: none
+}
+
+
+
+.container {
+    max-width: calc(100% - 50px) !important;
+
+    @media (min-width: 1580px) {
+        max-width: 1520px !important;
+    }
+
+    @media (max-width: 568px) {
+        max-width: calc(100% - 0px) !important;
+    }
+}
+
+/************************************************ RTL DIrection*************************/
+
+html[dir='rtl'] {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body .rtl {
+    position: relative;
+    font-family: var(--arRegular);
+    font-weight: var(--font-weight-medium);
+}

@@ -1,0 +1,180 @@
+/****************English Fonts***************/
+
+
+@font-face {
+    font-family: 'GeneralSans-Light';
+    src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Light.woff') format('woff'),
+        url('../fonts/GeneralSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans-Regular';
+    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Regular.woff') format('woff'),
+        url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans-Medium';
+    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Medium.woff') format('woff'),
+        url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans-Semibold';
+    src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+        url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans-Bold';
+    src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Bold.woff') format('woff'),
+        url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+
+@font-face {
+    font-family: 'GeneralSans-Variable';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Variable.woff') format('woff'),
+        url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/****************Arabic Fonts***************/
+
+
+@font-face {
+    font-family: "Noto Kufi Arabic Thin";
+    src: url("../fonts/arabic/NotoKufiArabic-Thin.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic ExtraLight";
+    src: url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic Light";
+    src: url("../fonts/arabic/NotoKufiArabic-Light.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic Regular";
+    src: url("../fonts/arabic/NotoKufiArabic-Regular.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic Medium";
+    src: url("../fonts/arabic/NotoKufiArabic-Medium.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic SemiBold";
+    src: url("../fonts/arabic/NotoKufiArabic-SemiBold.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic Bold";
+    src: url("../fonts/arabic/NotoKufiArabic-Bold.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic ExtraBold";
+    src: url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Kufi Arabic Black";
+    src: url("../fonts/arabic/NotoKufiArabic-Black.woff2") format("woff2"),
+        url("../fonts/arabic/NotoKufiArabic-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+ 
+    
+    --light: "GeneralSans-Light",
+    --regular:"GeneralSans-Regular",
+    --medium:"GeneralSans-Medium",
+    --semiBold:"GeneralSans-Semibold",
+    --bold:"GeneralSans-Bold",
+    --variables:"GeneralSans-Variable",
+
+
+
+    --arThin: "Noto Kufi Arabic Thin";
+    --arExtraLight: "Noto Kufi Arabic ExtraLight";
+    --arLight: "Noto Kufi Arabic Light";
+    --arRegular: "Noto Kufi Arabic Regular";
+    --arMedium: "Noto Kufi Arabic Medium";
+    --arSemiBold: "Noto Kufi Arabic SemiBold";
+    --arBold: "Noto Kufi Arabic Bold";
+    --arExtraBold: "Noto Kufi Arabic ExtraBold";
+    --arBlack: "Noto Kufi Arabic Black";
+}
