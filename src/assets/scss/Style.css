@@ -36,143 +36,40 @@
 }
 /****************Arabic Fonts***************/
 @font-face {
-  font-family: "Noto Kufi Arabic Thin";
-  src: url("../fonts/arabic/NotoKufiArabic-Thin.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Kufi Arabic ExtraLight";
-  src: url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Kufi Arabic Light";
-  src: url("../fonts/arabic/NotoKufiArabic-Light.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Light.woff") format("woff");
+  font-family: "SimahzazaarabicW05";
+  src: url("../fonts/arabic/SimahzazaarabicW05-Light.woff2") format("woff2"), url("../fonts/arabic/SimahzazaarabicW05-Light.woff") format("woff"), url("../fonts/arabic/SimahzazaarabicW05-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Kufi Arabic Regular";
-  src: url("../fonts/arabic/NotoKufiArabic-Regular.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Regular.woff") format("woff");
+  font-family: "SimahzazaarabicW05";
+  src: url("../fonts/arabic/SimahzazaarabicW05-Regular.woff2") format("woff2"), url("../fonts/arabic/SimahzazaarabicW05-Regular.woff") format("woff"), url("../fonts/arabic/SimahzazaarabicW05-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Kufi Arabic Medium";
-  src: url("../fonts/arabic/NotoKufiArabic-Medium.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Medium.woff") format("woff");
+  font-family: "SimahzazaarabicW05";
+  src: url("../fonts/arabic/SimahzazaarabicW05-Medium.woff2") format("woff2"), url("../fonts/arabic/SimahzazaarabicW05-Medium.woff") format("woff"), url("../fonts/arabic/SimahzazaarabicW05-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Kufi Arabic SemiBold";
-  src: url("../fonts/arabic/NotoKufiArabic-SemiBold.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-SemiBold.woff") format("woff");
+  font-family: "SimahzazaarabicW05";
+  src: url("../fonts/arabic/SimahzazaarabicW05-SemiBold.woff2") format("woff2"), url("../fonts/arabic/SimahzazaarabicW05-SemiBold.woff") format("woff"), url("../fonts/arabic/SimahzazaarabicW05-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Kufi Arabic Bold";
-  src: url("../fonts/arabic/NotoKufiArabic-Bold.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Kufi Arabic ExtraBold";
-  src: url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Noto Kufi Arabic Black";
-  src: url("../fonts/arabic/NotoKufiArabic-Black.woff2") format("woff2"), url("../fonts/arabic/NotoKufiArabic-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "SimahzazaarabicW05";
-  src: url("../fonts/arabicFonts/SimahzazaarabicW05-Bold.woff2") format("woff2"), url("../fonts/arabicFonts/SimahzazaarabicW05-Bold.woff") format("woff"), url("../fonts/arabicFonts/SimahzazaarabicW05-Bold.ttf") format("truetype");
+  src: url("../fonts/arabic/SimahzazaarabicW05-Bold.woff2") format("woff2"), url("../fonts/arabic/SimahzazaarabicW05-Bold.woff") format("woff"), url("../fonts/arabic/SimahzazaarabicW05-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-:root {
-  --primary-font: "General Sans";
-  --arThin: "Noto Kufi Arabic Thin";
-  --arExtraLight: "Noto Kufi Arabic ExtraLight";
-  --arLight: "Noto Kufi Arabic Light";
-  --arRegular: "Noto Kufi Arabic Regular";
-  --arMedium: "Noto Kufi Arabic Medium";
-  --arSemiBold: "Noto Kufi Arabic SemiBold";
-  --arBold: "SimahzazaarabicW05";
-  --arExtraBold: "Noto Kufi Arabic ExtraBold";
-  --arBlack: "Noto Kufi Arabic Black";
-}
-
-.btn {
-  font-weight: var(--font-weight-bold);
-  border-radius: 8px;
-  padding: 10px 24px;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: 0px 5px 6px rgba(15, 54, 149, 0.05);
-}
-.btn a {
-  color: var(--theme-color);
-}
-.btn:hover, .btn:focus {
-  text-decoration: none;
-  box-shadow: none;
-}
-.btn.btn-primary {
-  background-color: var(--white);
-  color: var(--theme-color);
-  border: none;
-}
-.btn.btn-primary:hover {
-  background-color: var(--theme-color);
-  color: var(--white);
-}
-.btn.btn-secondary {
-  background-color: var(--theme-color);
-  color: var(--white);
-  border: none;
-}
-.btn.btn-secondary:hover {
-  background-color: var(--white);
-  color: var(--theme-color);
-}
-.btn.btn-outline-primary {
-  background: transparent;
-  border: 2px solid var(--theme-color);
-  color: var(--theme-color);
-}
-.btn.btn-outline-primary:hover {
-  background: var(--theme-color);
-  color: var(--white);
-}
-.btn.btn-outline-secondary {
-  background: transparent;
-  border: 2px solid var(--white);
-  color: var(--white);
-}
-.btn.btn-outline-secondary:hover {
-  background: var(--white);
-  color: var(--theme-color);
-}
-
 :root {
   --white: #fff;
   --theme-color: #281449;
@@ -181,6 +78,8 @@
   --gradiant: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   --lightGreen: #25D366;
   --darkGreen: #199D00;
+  --primary-font: "General Sans";
+  --arabic-font: "SimahzazaarabicW05";
   --font-weight-thin: 100;
   --font-weight-extra-light: 200;
   --font-weight-light: 300;
@@ -332,16 +231,73 @@ html[dir=rtl] {
 
 body .rtl {
   position: relative;
-  font-family: var(--arRegular);
+  font-family: var(--arabic-font);
   font-weight: var(--font-weight-medium);
 }
 
 .rtl a {
-  font-family: var(--arRegular);
+  font-family: var(--arabic-font);
+}
+
+.btn {
+  font-weight: var(--font-weight-bold);
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0px 5px 6px rgba(15, 54, 149, 0.05);
+}
+.btn a {
+  color: var(--theme-color);
+}
+.btn:hover, .btn:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.btn.btn-primary {
+  background-color: var(--white);
+  color: var(--theme-color);
+  border: none;
+}
+.btn.btn-primary:hover {
+  background-color: var(--theme-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.btn.btn-secondary {
+  background-color: var(--theme-color);
+  color: var(--white);
+  border: none;
+}
+.btn.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--theme-color);
+}
+.btn.btn-outline-primary {
+  background: transparent;
+  border: 2px solid var(--theme-color);
+  color: var(--theme-color);
+}
+.btn.btn-outline-primary:hover {
+  background: var(--theme-color);
+  color: var(--white);
+}
+.btn.btn-outline-secondary {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+.btn.btn-outline-secondary:hover {
+  background: var(--white);
+  color: var(--theme-color);
 }
 
 /******************************************* Banner__UI *********************************/
 .banner__wrapper {
+  height: 100%;
   background-repeat: repeat;
   background-size: cover;
   background-position: bottom;
@@ -359,15 +315,132 @@ body .rtl {
 }
 
 .about__wrapper {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 .about__wrapper--border {
   padding: 18px 24px;
   border-radius: 8px;
   border: 2px solid var(--theme-color);
 }
+.about__wrapper--banner {
+  background-image: url(../images/logoBgEn.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: var(--theme-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  margin-top: 80px;
+  padding: 40px 40px;
+  overflow: hidden;
+}
+.about__wrapper--banner h2 {
+  width: 55%;
+}
+.about__wrapper--banner button {
+  width: 185px;
+}
+
+.service__wrapper {
+  padding: 0 0 80px;
+}
+.service__wrapper--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.study__wrapper {
+  padding: 0 0 80px;
+}
+.study__wrapper--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.scholarship__wrapper {
+  padding: 25px 40px;
+  border-radius: 16px;
+}
+.scholarship__wrapper--img span {
+  width: 100%;
+}
+.scholarship__wrapper--img span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.contact__wrapper {
+  padding: 80px 0;
+}
+.contact__wrapper--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.contact__wrapper--info {
+  margin: 40px 0;
+  background-color: var(--theme-color);
+  border-radius: 16px;
+  padding: 20px;
+}
+.contact__wrapper--info-detail {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 16px;
+}
+.contact__wrapper--info-detail p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact__wrapper--social {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact__wrapper--social-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact__wrapper--social-icon-box {
+  background: var(--white);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 1px rgba(40, 20, 73, 0.1294117647);
+  border-radius: 8px;
+}
 
 /******************************************* RTL__UI *********************************/
-.rtl .banner__wrapper--img img {
+.rtl .banner__wrapper--img img,
+.rtl .scholarship__wrapper--img img {
   transform: scaleX(1);
+}
+.rtl .about__wrapper--banner {
+  background-image: url(../images/logoBgAr.png);
 }/*# sourceMappingURL=Style.css.map */

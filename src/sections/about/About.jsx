@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap"
-import { Box, HeadingStyled, Section, SubHeading, TextStyled } from "../../UI/Elements"
+import { Box, ButtonStyled, HeadingStyled, Section, SubHeading, TextStyled } from "../../UI/Elements"
 
 const About = () => {
     return (
         <Section id="about" className="about__wrapper">
             <Container>
-                <Row className="align-items-start">
+                <Row className="align-items-start row-gap-3">
                     <Col lg={4}>
                         <Box className="about__wrapper--content">
                             <HeadingStyled> Who are we</HeadingStyled>
@@ -32,6 +32,12 @@ const About = () => {
                         </Box>
                     </Col>
                 </Row>
+            </Container>
+            <Container>
+                <Box className="about__wrapper--banner">
+                    <HeadingStyled color="var(--white)">Start your global journey with trusted experts by your side</HeadingStyled>
+                    <ButtonStyled className="btn btn-primary">Contact us</ButtonStyled>
+                </Box>
             </Container>
         </Section>
     )

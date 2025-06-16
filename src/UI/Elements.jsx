@@ -51,7 +51,7 @@ export const MainTitle = styled.h1`
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
     text-transform: ${props => props.transform ? props.transform : ''};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arBold)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `
 
 export const HeadingStyled = styled.h2`
@@ -65,7 +65,7 @@ export const HeadingStyled = styled.h2`
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
     text-transform: ${props => props.transform ? props.transform : ''};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arBold)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `
 
 export const SubHeading = styled.h3`
@@ -79,7 +79,7 @@ export const SubHeading = styled.h3`
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
     text-transform: ${props => props.transform ? props.transform : ''};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arBold)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `
 
 export const TextStyled = styled.p`
@@ -91,8 +91,8 @@ export const TextStyled = styled.p`
     color:${props => props.color ? props.color : "var(--theme-color)"};
     text-transform: ${props => props.transform ? props.transform : 'math-auto'};
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
-    font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--medium)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arRegular)"};
+    font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `
 
 export const LabelStyled = styled.label`
@@ -104,7 +104,7 @@ export const LabelStyled = styled.label`
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
     color:${props => props.color ? props.color : ''};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arSemiBold)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `
 
 export const List = styled.ul`
@@ -113,7 +113,7 @@ export const List = styled.ul`
     font-size:${props => props.size ? props.size : ''};
     font-weight: ${props => props.weight ? props.weight : "var(--font-weight-medium)"};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arMedium)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
     color:${props => props.color ? props.color : ''};
     display: ${props => props.display ? props.display : ''};
     line-height:${props => props.lh ? props.lh : ''};
@@ -129,7 +129,7 @@ export const ListItem = styled.li`
     font-size:${props => props.size ? props.size : '16px'};
     font-weight: ${props => props.weight ? props.weight : "var(--font-weight-medium)"};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arMedium)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
     color:${props => props.color ? props.color : ''};
     display: ${props => props.display ? props.display : ''};
     line-height:${props => props.lh ? props.lh : ''};
@@ -152,6 +152,6 @@ export const ButtonStyled = styled.button`
     border-radius: ${props => props.radius ? props.radius : ""};
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arBold)"};
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
     
 `

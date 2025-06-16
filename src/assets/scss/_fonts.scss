@@ -56,113 +56,52 @@
 
 
 @font-face {
-    font-family: "Noto Kufi Arabic Thin";
-    src: url("../fonts/arabic/NotoKufiArabic-Thin.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-Thin.woff") format("woff");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Noto Kufi Arabic ExtraLight";
-    src: url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-ExtraLight.woff") format("woff");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Noto Kufi Arabic Light";
-    src: url("../fonts/arabic/NotoKufiArabic-Light.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-Light.woff") format("woff");
+    font-family: 'SimahzazaarabicW05';
+    src: url('../fonts/arabic/SimahzazaarabicW05-Light.woff2') format('woff2'),
+        url('../fonts/arabic/SimahzazaarabicW05-Light.woff') format('woff'),
+        url('../fonts/arabic/SimahzazaarabicW05-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
+
 @font-face {
-    font-family: "Noto Kufi Arabic Regular";
-    src: url("../fonts/arabic/NotoKufiArabic-Regular.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-Regular.woff") format("woff");
+    font-family: 'SimahzazaarabicW05';
+    src: url('../fonts/arabic/SimahzazaarabicW05-Regular.woff2') format('woff2'),
+        url('../fonts/arabic/SimahzazaarabicW05-Regular.woff') format('woff'),
+        url('../fonts/arabic/SimahzazaarabicW05-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Noto Kufi Arabic Medium";
-    src: url("../fonts/arabic/NotoKufiArabic-Medium.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-Medium.woff") format("woff");
+    font-family: 'SimahzazaarabicW05';
+    src: url('../fonts/arabic/SimahzazaarabicW05-Medium.woff2') format('woff2'),
+        url('../fonts/arabic/SimahzazaarabicW05-Medium.woff') format('woff'),
+        url('../fonts/arabic/SimahzazaarabicW05-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Noto Kufi Arabic SemiBold";
-    src: url("../fonts/arabic/NotoKufiArabic-SemiBold.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-SemiBold.woff") format("woff");
+    font-family: 'SimahzazaarabicW05';
+    src: url('../fonts/arabic/SimahzazaarabicW05-SemiBold.woff2') format('woff2'),
+        url('../fonts/arabic/SimahzazaarabicW05-SemiBold.woff') format('woff'),
+        url('../fonts/arabic/SimahzazaarabicW05-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Noto Kufi Arabic Bold";
-    src: url("../fonts/arabic/NotoKufiArabic-Bold.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Noto Kufi Arabic ExtraBold";
-    src: url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-ExtraBold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Noto Kufi Arabic Black";
-    src: url("../fonts/arabic/NotoKufiArabic-Black.woff2") format("woff2"),
-        url("../fonts/arabic/NotoKufiArabic-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'SimahzazaarabicW05';
-    src: url('../fonts/arabicFonts/SimahzazaarabicW05-Bold.woff2') format('woff2'),
-        url('../fonts/arabicFonts/SimahzazaarabicW05-Bold.woff') format('woff'),
-        url('../fonts/arabicFonts/SimahzazaarabicW05-Bold.ttf') format('truetype');
+    src: url('../fonts/arabic/SimahzazaarabicW05-Bold.woff2') format('woff2'),
+        url('../fonts/arabic/SimahzazaarabicW05-Bold.woff') format('woff'),
+        url('../fonts/arabic/SimahzazaarabicW05-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-}
-
-
-:root {
-
-
-
-    --primary-font: "General Sans";
-
-
-    // arabic
-
-    --arThin: "Noto Kufi Arabic Thin";
-    --arExtraLight: "Noto Kufi Arabic ExtraLight";
-    --arLight: "Noto Kufi Arabic Light";
-    --arRegular: "Noto Kufi Arabic Regular";
-    --arMedium: "Noto Kufi Arabic Medium";
-    --arSemiBold: "Noto Kufi Arabic SemiBold";
-    --arBold: "SimahzazaarabicW05";
-    --arExtraBold: "Noto Kufi Arabic ExtraBold";
-    --arBlack: "Noto Kufi Arabic Black";
 }

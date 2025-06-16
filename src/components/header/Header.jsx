@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { NavDataConfig } from "../data/Data";
+import { NavDataConfig, socialIcon } from "../data/Data";
 import { Container, Row } from "react-bootstrap";
 import { Box, ButtonStyled, LazyImage, List, ListItem, Span } from "../../UI/Elements";
 import { Link } from "react-scroll";
-import { FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { BsJustify, BsX } from "react-icons/bs";
 import { Navbar } from "./Styled";
-import { RiTwitterXLine } from "react-icons/ri";
 import { Logo } from "../../UI/AllImages";
 
 const Header = () => {
@@ -40,22 +39,7 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    const socialIcon = [
-        {
-            img: <RiTwitterXLine size="18px" color="var(--theme-color)" />,
-            link: 'https://x.com/altaif2024?s=21&t=Wq0RMCoJloRUNeSTcfLPrg',
-        },
 
-        {
-            img: <FaInstagram size="18px" color="var(--theme-color)" />,
-            link: 'https://www.instagram.com/eltayef.sa/profilecard/?igsh=MWZ4c3Y1dmw0dXpreg==',
-        },
-        {
-            img: <FaLinkedin size="18px" color="var(--theme-color)" />,
-            link: 'https://www.snapchat.com/add/eltayef.sa?share_id=1vRxAMusgk4&locale=ar-AE',
-        },
-
-    ];
 
     return (
 
@@ -72,13 +56,13 @@ const Header = () => {
                             </Box>
                             {NavDataConfig.map((item, key) => (
                                 <ListItem key={key} className="navbar__nav--list-items">
-                                    <Link to={item.to} spy={true} smooth={true} offset={-60} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
+                                    <Link to={item.to} spy={true} smooth={true} offset={-120} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
                                 </ListItem>
                             ))}
                         </List>
                         <Box className='navbar__nav--social'>
                             <ButtonStyled className="btn btn-primary">
-                                <FaPhoneAlt />
+                                <FaPhoneAlt size="24px" />
                                 <Span>+966 000 000 000</Span>
                             </ButtonStyled>
                             <Box className='navbar__nav--social-icon'>
@@ -99,7 +83,6 @@ const Header = () => {
                     </Box>
                 </Row>
             </Container>
-
         </Navbar>
 
     )

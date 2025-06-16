@@ -130,10 +130,10 @@ html[dir='rtl'] {
 
 body .rtl {
     position: relative;
-    font-family: var(--arRegular);
+    font-family: var(--arabic-font);
     font-weight: var(--font-weight-medium);
 }
 
 .rtl a {
-    font-family: var(--arRegular);
+    font-family: var(--arabic-font);
 }

@@ -26,7 +26,7 @@ export const Navbar = styled.header`
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap:30px;
+            gap:50px;
 
             img{
                 display:none;
@@ -52,7 +52,7 @@ export const Navbar = styled.header`
                     }
                 }
                 & .active{
-                    font-weight:var(--font-weight-semi-bold);
+                    font-weight:var(--font-weight-bold);
                     &:after{
                         content: '';
                         position:absolute;
@@ -67,8 +67,6 @@ export const Navbar = styled.header`
                 }
             }
         }
-
-
 
         &--social{
             display: flex;
