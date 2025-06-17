@@ -10,20 +10,19 @@ import { Navbar } from "./Styled";
 import { Logo } from "../../UI/AllImages";
 
 const Header = () => {
-    const WhatsApp = () => {
-        const phoneNumber = '+966533046533';
-        const message = 'Hello, Al faif';
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(whatsappURL, '_blank');
-    };
     const { t } = useTranslation();
     const [isSticky, setIsSticky] = useState(false);
     const [toggle, setToggle] = useState(false);
-
     const handleToggle = () => {
         setToggle(!toggle);
         const element = document.querySelector(".navbar__nav--list");
         element.classList.toggle("showToggle");
+    };
+    const WhatsApp = () => {
+        const phoneNumber = '+966533046533';
+        const message = 'Hello, Sonood';
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
     };
 
     useEffect(() => {
@@ -84,7 +83,6 @@ const Header = () => {
                 </Row>
             </Container>
         </Navbar>
-
     )
 }
 

@@ -35,22 +35,11 @@ export const Navbar = styled.header`
             &-items{
                 position:relative;
                 a{
-                 color:var(--theme-color);
+                    font-weight:var(--font-weight-semi-bold);
+                    color:var(--theme-color);
                 }
 
-                &:hover{
-                    &:after{
-                        content: '';
-                        position:absolute;
-                        bottom:-2px;
-                        left:0;
-                        right:0;
-                        width:40px;
-                        height:2px;
-                        background:var(--theme-color);
-                        margin:auto;
-                    }
-                }
+                &:hover,
                 & .active{
                     font-weight:var(--font-weight-bold);
                     &:after{
@@ -71,7 +60,7 @@ export const Navbar = styled.header`
         &--social{
             display: flex;
             align-items: center;
-            gap:6px;
+            gap:12px;
 
             &-icon{
                 display: flex;
@@ -80,8 +69,8 @@ export const Navbar = styled.header`
 
                 &-box{
                     background: var(--white);
-                    width:40px;
-                    height:40px;
+                    width:44px;
+                    height:44px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -107,7 +96,6 @@ export const Navbar = styled.header`
                 top: 0;
                 right: 0;
                 width: 80%;
-                // height: 100vh;
                 background: var(--white);
                 transform: translateX(100%);
                 transition: transform 0.4s ease-in-out;
@@ -124,14 +112,29 @@ export const Navbar = styled.header`
             }
         }
     }
-    &.sticky{
 
-        background:var(--white);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    &.sticky{
+        background:var(--theme-color);
+        box-shadow: 0 4px 12px #2814493b;
         transform: translateY(0);
         opacity: 0;
         animation: slideDown 0.6s ease forwards;
+
+        & .navbar__nav--list-items{
+
+            a{
+                color: var(--white);
+            }
+
+            &:hover,
+            & .active{
+                &:after{
+
+                    background:var(--white);
+                }
+            }
+        
+        }
     }
 
     @keyframes slideDown {

@@ -102,7 +102,7 @@ export const LabelStyled = styled.label`
     font-size:${props => props.size ? props.size : '16px'};
     font-weight:${props => props.weight ? props.weight : 'var(--font-weight-semi-bold)'};
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
-    color:${props => props.color ? props.color : ''};
+    color:${props => props.color ? props.color : 'var(--theme-color)'};
     font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
                 ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `

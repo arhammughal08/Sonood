@@ -1,5 +1,4 @@
 .btn {
-    // font-family: var(--button-font);
     font-weight: var(--font-weight-bold);
     border-radius: 8px;
     padding: 10px 24px;
@@ -28,7 +27,7 @@
         &:hover {
             background-color: var(--theme-color);
             color: var(--white);
-            border: 1px solid var(--white);
+            outline: 1px solid var(--white);
         }
     }
 
@@ -39,6 +38,7 @@
 
         &:hover {
             background-color: var(--white);
+            outline: 2px solid var(--theme-color);
             color: var(--theme-color);
         }
     }

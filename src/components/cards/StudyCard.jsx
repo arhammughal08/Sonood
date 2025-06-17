@@ -1,13 +1,15 @@
 import styled from "styled-components"
 import { Box, HeadingStyled, LazyImage, TextStyled } from "../../UI/Elements"
+import { useTranslation } from "react-i18next";
 
 const StudyCard = ({ icon, img, text }) => {
+    const { t } = useTranslation();
     return (
         <Card className="study__card" style={{ backgroundImage: `url(${img})` }}>
             <Box className="study__icon">
                 <LazyImage src={icon} />
             </Box>
-            <HeadingStyled margin="0" size="20px" color='var(--white)' weight="var(--font-weight-semi-bold)" >{text}</HeadingStyled>
+            <HeadingStyled margin="0" size="20px" color='var(--white)' weight="var(--font-weight-semi-bold)" >{t(text)}</HeadingStyled>
         </Card>
     )
 }

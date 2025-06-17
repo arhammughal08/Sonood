@@ -1,11 +1,10 @@
 @import './common';
 
 
-/******************************************* Banner__UI *********************************/
+/******************************************* LTR_UI *********************************/
 
 
 .banner__wrapper {
-
     // height: calc(100vh - 0px);
     height: 100%;
     background-repeat: repeat;
@@ -36,6 +35,11 @@
         padding: 18px 24px;
         border-radius: 8px;
         border: 2px solid var(--theme-color);
+        height: 320px;
+
+        @media (max-width:1299px) {
+            height: auto;
+        }
     }
 
     &--banner {
@@ -86,13 +90,13 @@
         justify-content: center;
         gap: 12px;
         text-align: center;
-        width: 70%;
+        width: 50%;
         margin: auto;
     }
 }
 
 .scholarship__wrapper {
-    padding: 25px 40px;
+    padding: 25px 20px;
     border-radius: 16px;
 
     &--img {
@@ -179,9 +183,29 @@
         transform: scaleX(1);
     }
 
+    .navbar__nav--social button span {
+        transform: scale(-1);
+    }
+
     .about__wrapper {
         &--banner {
             background-image: url(../images/logoBgAr.png);
+        }
+
+        &--border {
+            height: 260px;
+
+            @media (max-width:1299px) {
+                height: auto;
+            }
+        }
+    }
+
+    .form__group {
+        svg {
+            right: auto !important;
+            left: 15px;
+
         }
     }
 

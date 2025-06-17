@@ -1,42 +1,42 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { Box, ButtonStyled, HeadingStyled, Section, SubHeading, TextStyled } from "../../UI/Elements"
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const { t } = useTranslation();
     return (
         <Section id="about" className="about__wrapper">
             <Container>
                 <Row className="align-items-start row-gap-3">
-                    <Col lg={4}>
+                    <Col lg={5} md={5}>
                         <Box className="about__wrapper--content">
-                            <HeadingStyled> Who are we</HeadingStyled>
-                            <TextStyled>
-                                The idea of establishing an educational consulting team began with the personal experience of the project’s founder and several of his family members who studied abroad for several years in English-speaking countries. From this rich educational journey—full of experiences and challenges—came the desire to share knowledge and expertise by offering educational consultations based on real-life experience and a deep understanding of the opportunities and challenges involved, in order to ease the path for students wishing to study abroad.
-                                The project was founded in 2008 under the name "Risalat Al-Ma'rifah" ("Message of Knowledge"), and a large number of students were coordinated to study abroad in accredited language institutes and universities. Due to the COVID-19 pandemic and other organizational reasons, operations were paused for a period to allow for updates and improvements, including renaming the initiative to "Sanoud Educational Consulting."
-                            </TextStyled>
+                            <HeadingStyled>{t("about_heading_1")} </HeadingStyled>
+                            <TextStyled>{t("about_heading_1_content")}</TextStyled>
                         </Box>
                     </Col>
-                    <Col lg={4}>
-                        <Box className="about__wrapper--content about__wrapper--border">
-                            <SubHeading>Accreditations </SubHeading>
-                            <TextStyled>
-                                Sanoud Educational Consulting holds an official license in the Kingdom of Saudi Arabia (License No. 294) and a Certified Education Agent certificate from the British Council (No. 68511). This represents formal recognition of our ability to provide high-quality, professional consulting services in accordance with globally recognized standards, thereby enhancing the quality of our services for students seeking to study abroad.
-                            </TextStyled>
-                        </Box>
+                    <Col lg={7} md={7}>
+                        <Row>
+                            <Col lg={6}>
+                                <Box className="about__wrapper--content about__wrapper--border">
+                                    <SubHeading>{t("about_heading_2")} </SubHeading>
+                                    <TextStyled>{t("about_heading_2_content")}</TextStyled>
+                                </Box>
+                            </Col>
+                            <Col lg={6}>
+                                <Box className="about__wrapper--content about__wrapper--border">
+                                    <SubHeading>{t("about_heading_3")} </SubHeading>
+                                    <TextStyled>{t("about_heading_3_content")}</TextStyled>
+                                </Box>
+                            </Col>
+                        </Row>
                     </Col>
-                    <Col lg={4}>
-                        <Box className="about__wrapper--content about__wrapper--border">
-                            <SubHeading>Our vision </SubHeading>
-                            <TextStyled>
-                                Our core objective at Sanoud Educational Consulting is to put our team's expertise at the service of our students—to be the bridge that connects students aspiring to study abroad with leading international educational institutions, from language institutes to prestigious universities. We remain in continuous contact with our students throughout their journey until they achieve their academic goals.
-                            </TextStyled>
-                        </Box>
-                    </Col>
+
                 </Row>
             </Container>
             <Container>
                 <Box className="about__wrapper--banner">
-                    <HeadingStyled color="var(--white)">Start your global journey with trusted experts by your side</HeadingStyled>
-                    <ButtonStyled className="btn btn-primary">Contact us</ButtonStyled>
+                    <HeadingStyled color="var(--white)">{t("about_banner")}</HeadingStyled>
+                    <ButtonStyled className="btn btn-primary"> {t("btn")} </ButtonStyled>
                 </Box>
             </Container>
         </Section>

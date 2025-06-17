@@ -83,14 +83,14 @@ const ButtonBox = styled.div`
   z-index: 1;
   .whatsapp {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 15px;
+    left: 15px;
     z-index: 1;
   }
   .change-Btn {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 15px;
+    right: 15px;
   }
   .english_icon {
     border-radius: 50%;

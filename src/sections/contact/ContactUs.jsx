@@ -4,20 +4,23 @@ import { Container, Row } from 'react-bootstrap'
 import { MdEmail } from 'react-icons/md'
 import { FaLocationDot } from 'react-icons/fa6'
 import { socialIcon } from '../../components/data/Data'
+import { Form } from '../../components'
+import { useTranslation } from 'react-i18next'
 
 const ContactUs = () => {
+     const { t } = useTranslation();
     return (
         <Section id="contact" className="contact__wrapper">
             <Container>
                 <Row>
                     <Box className="contact__wrapper--content">
-                        <MainTitle>Start your global journey</MainTitle>
-                        <TextStyled>Please fill out the form below — a Snood advisor will contact you within 24 hours.</TextStyled>
+                        <MainTitle> {t("contact_heading")} </MainTitle>
+                        <TextStyled size="20px"> {t("contact_Content")} </TextStyled>
                     </Box>
                 </Row>
                 <Row>
                     <Box className="contact__wrapper--info">
-                        <HeadingStyled size="24px" color='var(--white)'>Do you have questions? We are ready to help you.</HeadingStyled>
+                        <HeadingStyled size="24px" color='var(--white)'> {t("contact_banner")}</HeadingStyled>
                         <Box className='d-flex align-items-center justify-content-between'>
                             <Box className='contact__wrapper--info-detail'>
                                 <TextStyled color="var(--white)">
@@ -47,6 +50,7 @@ const ContactUs = () => {
                         </Box>
                     </Box>
                 </Row>
+                <Form />
             </Container>
         </Section>
     )

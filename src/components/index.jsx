@@ -4,6 +4,7 @@ import Footer from "./footer/Footer";
 import ChangeButton from "../languages/ChangeButton";
 import ServiceCard from "./cards/ServiceCard";
 import StudyCard from "./cards/StudyCard";
+import Form from "./form/Form";
 
 export {
     ErrorPage,
@@ -12,4 +13,5 @@ export {
     ChangeButton,
     ServiceCard,
     StudyCard,
+    Form,
 }

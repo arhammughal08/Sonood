@@ -2,15 +2,17 @@ import { Col, Container, Row } from "react-bootstrap"
 import { Box, MainTitle, Section, TextStyled } from "../../UI/Elements"
 import { ServiceCard } from "../../components"
 import { serviceData } from "../../components/data/Data"
+import { useTranslation } from "react-i18next"
 
 const Service = () => {
+    const { t } = useTranslation();
     return (
         <Section id="service" className="service__wrapper">
             <Container>
                 <Row>
                     <Box className="service__wrapper--content">
-                        <MainTitle>Our services</MainTitle>
-                        <TextStyled>We provide specialized educational consultations to help students choose the right language institute, a safe city, and the most suitable country based on their needs and goals. We also guide students in selecting the appropriate academic major according to their interests and cognitive abilities. We take pride in our partnerships with top-tier language institutes and educational institutions accredited by the Ministry of Education and Saudi cultural missions abroad.</TextStyled>
+                        <MainTitle>{t("service_heading")} </MainTitle>
+                        <TextStyled size="20px"> {t("service_heading_content")}</TextStyled>
                     </Box>
                 </Row>
                 <Row className="row-gap-3 mt-5">

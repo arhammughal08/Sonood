@@ -34,31 +34,31 @@ export const NavDataConfig = [
 export const serviceData = [
     {
         icon: Service1,
-        text: "Providing academic admission",
+        text: "Service1",
     },
     {
         icon: Service2,
-        text: "Assistance in obtaining a student travel visa",
+        text: "Service2",
     },
     {
         icon: Service3,
-        text: "Book the most appropriate flight in terms of price and arrival time",
+        text: "Service3",
     },
     {
         icon: Service4,
-        text: "Booking accommodation with a family or in student housing",
+        text: "Service4",
     },
     {
         icon: Service5,
-        text: "Book an airport reception",
+        text: "Service5",
     },
     {
         icon: Service6,
-        text: "Explaining travel procedures and documents required upon arrival in the country of study",
+        text: "Service6",
     },
     {
         icon: Service7,
-        text: "Continuous communication with our students and supporting them throughout their studies abroad",
+        text: "Service7",
     },
 
 ]
@@ -67,42 +67,42 @@ export const studyData = [
     {
         icon: Britain,
         img: BritainBg,
-        text: "Study in Britain",
+        text: "Britain",
     },
     {
         icon: Australia,
         img: AustraliaBg,
-        text: "Study in Australia",
+        text: "Australia",
     },
     {
         icon: America,
         img: AmericaBg,
-        text: "Study in America",
+        text: "America",
     },
     {
         icon: Germany,
         img: GermanyBg,
-        text: "Study in Germany",
+        text: "Germany",
     },
     {
         icon: Canada,
         img: CanadaBg,
-        text: "Study in Canada",
+        text: "Canada",
     },
     {
         icon: France,
         img: FranceBg,
-        text: "Study in France",
+        text: "France",
     },
     {
         icon: Hungary,
         img: HungaryBg,
-        text: "Study in Hungary",
+        text: "Hungary",
     },
     {
         icon: Malaysia,
         img: MalaysiaBg,
-        text: "Study in Malaysia",
+        text: "Malaysia",
     },
 
 ]

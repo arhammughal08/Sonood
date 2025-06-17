@@ -179,7 +179,7 @@ h4 {
 
 p {
   font-size: 16px;
-  font-family: var(--regular);
+  font-family: var(--primary-font);
   padding-bottom: 0;
   margin: 0;
 }
@@ -265,7 +265,7 @@ body .rtl {
 .btn.btn-primary:hover {
   background-color: var(--theme-color);
   color: var(--white);
-  border: 1px solid var(--white);
+  outline: 1px solid var(--white);
 }
 .btn.btn-secondary {
   background-color: var(--theme-color);
@@ -274,6 +274,7 @@ body .rtl {
 }
 .btn.btn-secondary:hover {
   background-color: var(--white);
+  outline: 2px solid var(--theme-color);
   color: var(--theme-color);
 }
 .btn.btn-outline-primary {
@@ -295,7 +296,7 @@ body .rtl {
   color: var(--theme-color);
 }
 
-/******************************************* Banner__UI *********************************/
+/******************************************* LTR_UI *********************************/
 .banner__wrapper {
   height: 100%;
   background-repeat: repeat;
@@ -321,6 +322,12 @@ body .rtl {
   padding: 18px 24px;
   border-radius: 8px;
   border: 2px solid var(--theme-color);
+  height: 320px;
+}
+@media (max-width: 1299px) {
+  .about__wrapper--border {
+    height: auto;
+  }
 }
 .about__wrapper--banner {
   background-image: url(../images/logoBgEn.png);
@@ -366,12 +373,12 @@ body .rtl {
   justify-content: center;
   gap: 12px;
   text-align: center;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 
 .scholarship__wrapper {
-  padding: 25px 40px;
+  padding: 25px 20px;
   border-radius: 16px;
 }
 .scholarship__wrapper--img span {
@@ -441,6 +448,21 @@ body .rtl {
 .rtl .scholarship__wrapper--img img {
   transform: scaleX(1);
 }
+.rtl .navbar__nav--social button span {
+  transform: scale(-1);
+}
 .rtl .about__wrapper--banner {
   background-image: url(../images/logoBgAr.png);
+}
+.rtl .about__wrapper--border {
+  height: 260px;
+}
+@media (max-width: 1299px) {
+  .rtl .about__wrapper--border {
+    height: auto;
+  }
+}
+.rtl .form__group svg {
+  right: auto !important;
+  left: 15px;
 }/*# sourceMappingURL=Style.css.map */

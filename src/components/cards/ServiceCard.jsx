@@ -1,13 +1,15 @@
 import styled from "styled-components"
 import { Box, LazyImage, TextStyled } from "../../UI/Elements"
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ icon, text }) => {
+    const { t } = useTranslation();
     return (
         <Card className="service__card">
             <Box className="service__icon">
                 <LazyImage src={icon} />
             </Box>
-            <TextStyled weight="var(--font-weight-medium)">{text}</TextStyled>
+            <TextStyled weight="var(--font-weight-medium)">{t(text)}</TextStyled>
         </Card>
     )
 }
