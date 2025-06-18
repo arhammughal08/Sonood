@@ -16,7 +16,7 @@ const ServiceCard = ({ icon, text }) => {
 
 export default ServiceCard
 const Card = styled.div`
-    padding: 30px 24px;
+    padding: 30px 35px;
     border-radius: 16px;
     border: 1px solid var(--theme-color);
     display: flex;
@@ -25,7 +25,14 @@ const Card = styled.div`
     justify-content: start;
     gap: 20px;
     text-align: center;
-    height: 210px;
+    height: 235px;
+
+    @media(max-width:992px){
+        height: 200px;
+    }
+    @media(max-width:768px){
+        height: auto;
+    }
 
     .service__icon {
         width: 80px;
@@ -36,6 +43,11 @@ const Card = styled.div`
         align-items: center;
         justify-content: center;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+        img{
+            width:100%;
+            height:100%;
+        }
     }
 
 

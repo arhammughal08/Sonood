@@ -6,16 +6,18 @@ import { Box, ButtonStyled, LazyImage, List, ListItem, Span } from "../../UI/Ele
 import { Link } from "react-scroll";
 import { FaPhoneAlt } from "react-icons/fa";
 import { BsJustify, BsX } from "react-icons/bs";
-import { Navbar } from "./Styled";
+import { MenuOverlay, Navbar } from "./Styled";
 import { Logo } from "../../UI/AllImages";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+    const navigate = useNavigate()
     const { t } = useTranslation();
     const [isSticky, setIsSticky] = useState(false);
     const [toggle, setToggle] = useState(false);
     const handleToggle = () => {
         setToggle(!toggle);
-        const element = document.querySelector(".navbar__nav--list");
+        const element = document.querySelector(".navbar__nav--wrap");
         element.classList.toggle("showToggle");
     };
     const WhatsApp = () => {
@@ -41,24 +43,27 @@ const Header = () => {
 
 
     return (
+        <>
 
-        <Navbar className={`${isSticky ? 'sticky' : ''}`}>
-            <Container>
-                <Row className="w-100">
+            {toggle && <MenuOverlay onClick={handleToggle} />}
+            <Navbar className={`${isSticky ? 'sticky' : ''}`}>
+                <Container>
                     <Box className='navbar__nav'>
-                        <Box className="navbar__nav--brand">
+                        <Box className="navbar__nav--brand" onClick={() => navigate("/")}>
                             <LazyImage src={Logo} />
                         </Box>
-                        <List className='navbar__nav--list'>
-                            <Box className="d-none d-md-block">
+                        <Box className='navbar__nav--wrap'>
+                            <Box className="navbar__nav--wrap-mobile-brand">
                                 <LazyImage src={Logo} />
                             </Box>
-                            {NavDataConfig.map((item, key) => (
-                                <ListItem key={key} className="navbar__nav--list-items">
-                                    <Link to={item.to} spy={true} smooth={true} offset={-120} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
-                                </ListItem>
-                            ))}
-                        </List>
+                            <List className='navbar__nav--wrap-list'>
+                                {NavDataConfig.map((item, key) => (
+                                    <ListItem key={key} className="navbar__nav--wrap-list-items">
+                                        <Link to={item.to} spy={true} smooth={true} offset={-120} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
+                                    </ListItem>
+                                ))}
+                            </List>
+                        </Box>
                         <Box className='navbar__nav--social'>
                             <ButtonStyled className="btn btn-primary">
                                 <FaPhoneAlt size="24px" />
@@ -80,9 +85,9 @@ const Header = () => {
                             </Span>
                         </Box>
                     </Box>
-                </Row>
-            </Container>
-        </Navbar>
+                </Container>
+            </Navbar>
+        </>
     )
 }
 

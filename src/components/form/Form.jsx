@@ -8,7 +8,6 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
 import { t } from 'i18next';
 
-// Handle form submission (can be async)
 async function handleForm(prevState, formData) {
     const data = Object.fromEntries(formData.entries());
     console.log("Form submitted:", data);
@@ -59,9 +58,9 @@ const Form = () => {
                             required
                             onChange={(e) => setRole(e.target.value)}
                         >
-                            <option value="" visible hidden>Choose one</option>
-                            <option value="partner">Partner</option>
-                            <option value="student">Student</option>
+                            <option value="" visible hidden>{t("choose")}</option>
+                            <option value="partner">{t("partner")}</option>
+                            <option value="student">{t("student")}</option>
                         </select>
                         <IoIosArrowDown />
                     </Box>
@@ -73,9 +72,7 @@ const Form = () => {
                             <Box className='form__group'>
                                 <LabelStyled>{t("selectCountry")}</LabelStyled>
                                 <select className='form__group--control' name="interest">
-                                    <option value="" visible hidden >Select country</option>
-                                    <option value="medicine">Canada</option>
-                                    <option value="medicine">Hungery</option>
+                                    <option value="" visible hidden >{t("selectCountry")}</option>
                                 </select>
                                 <IoIosArrowDown />
                             </Box>
@@ -84,7 +81,7 @@ const Form = () => {
                             <Box className='form__group'>
                                 <LabelStyled>{t("educationalLevel")}</LabelStyled>
                                 <select className='form__group--control' name="interest">
-                                    <option value="" visible hidden>Select the academic stage</option>
+                                    <option value="" visible hidden>{t("educationalLevel")}</option>
                                     <option value="bachelor">Bachelor’s</option>
                                     <option value="master">Master’s</option>
                                     <option value="phd">PhD</option>
@@ -124,7 +121,7 @@ const FormWrap = styled.form`
 
     &--control{ 
         border-radius:12px;
-        border:2px solid var(--theme-color);
+        border:1px solid var(--theme-color);
         padding:10px 15px;
 
         appearance: none;
@@ -153,9 +150,7 @@ const FormWrap = styled.form`
         option[value=""],
         &::placeholder {
             color: var(--light-blue);
-            font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
-                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
-
+            font-weight:regular;
         }
     } 
 

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Box, HeadingStyled, LazyImage, TextStyled } from "../../UI/Elements"
+import { Box, HeadingStyled, LazyImage, SubHeading, TextStyled } from "../../UI/Elements"
 import { useTranslation } from "react-i18next";
 
 const StudyCard = ({ icon, img, text }) => {
@@ -9,7 +9,7 @@ const StudyCard = ({ icon, img, text }) => {
             <Box className="study__icon">
                 <LazyImage src={icon} />
             </Box>
-            <HeadingStyled margin="0" size="20px" color='var(--white)' weight="var(--font-weight-semi-bold)" >{t(text)}</HeadingStyled>
+            <SubHeading margin="0" size="20px" color='var(--white)' weight="var(--font-weight-semi-bold)" >{t(text)}</SubHeading>
         </Card>
     )
 }

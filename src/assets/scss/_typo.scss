@@ -60,32 +60,42 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: var(--font-weight-bold);
+    // font-weight: var(--font-weight-bold);
     color: var(--theme-color);
     margin-bottom: 0.5rem;
 }
 
-h1 {
-    font-size: var(--h1);
-}
+// h1 {
+//     font-size: var(--h1);
+// }
 
-h2 {
-    font-size: var(--h2);
-}
+// h2 {
+//     font-size: var(--h2);
+// }
 
-h3 {
-    font-size: var(--h3);
-}
+// h3 {
+//     font-size: var(--h3);
+// }
 
-h4 {
-    font-size: var(--h4);
-}
+// h4 {
+//     font-size: var(--h4);
+// }
 
 p {
     font-size: 16px;
     font-family: var(--primary-font);
     padding-bottom: 0;
     margin: 0;
+
+    @media (max-width: 480px) {
+        font-size: 15px !important;
+    }
+}
+
+input,
+select,
+option {
+    font-family: var(--primary-font);
 }
 
 *::-moz-selection {
@@ -120,6 +130,18 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 28px !important;
+    }
+
+}
+
 /************************************************ RTL DIrection*************************/
 
 html[dir='rtl'] {
@@ -128,12 +150,17 @@ html[dir='rtl'] {
     overflow-x: hidden;
 }
 
-body .rtl {
+body.rtl {
     position: relative;
     font-family: var(--arabic-font);
     font-weight: var(--font-weight-medium);
-}
 
-.rtl a {
-    font-family: var(--arabic-font);
+
+    p,
+    a,
+    input,
+    select,
+    option {
+        font-family: var(--arabic-font);
+    }
 }

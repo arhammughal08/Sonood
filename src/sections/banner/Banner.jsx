@@ -1,10 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { BannerBg, BannerImage, Logo } from "../../UI/AllImages"
-import { Box, LazyImage, MainTitle, Section } from "../../UI/Elements"
+import { BannerTitle, Box, LazyImage, Section } from "../../UI/Elements"
 import { useTranslation } from "react-i18next";
 
 const Banner = () => {
-      const { t } = useTranslation();
+    const { t } = useTranslation();
     return (
         <Section id='home' className="banner__wrapper" bgImg={`url(${BannerBg})`}>
             <Container>
@@ -12,9 +12,9 @@ const Banner = () => {
                     <Col lg={6}>
                         <Box className="banner__wrapper--content">
                             <LazyImage src={Logo} />
-                            <MainTitle>
+                            <BannerTitle >
                                 {t("Banner_content")}
-                            </MainTitle>
+                            </BannerTitle>
                         </Box>
                     </Col>
                     <Col lg={6}>

@@ -15,9 +15,9 @@ const StudyAbroad = () => {
                         <TextStyled size="24px" weight="var(--font-weight-semi-bold)"> {t("study_heading_content")} </TextStyled>
                     </Box>
                 </Row>
-                <Row className="row-gap-3 my-5">
+                <Row className="row-gap-3 my-4  my-md-5">
                     {studyData.map((item, idx) => (
-                        <Col lg={3} md={4} sm={6} xs={12} key={idx}>
+                        <Col lg={3} md={6} key={idx}>
                             <StudyCard {...item} />
                         </Col>
                     ))}

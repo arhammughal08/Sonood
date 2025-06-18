@@ -15,7 +15,7 @@ const About = () => {
                         </Box>
                     </Col>
                     <Col lg={7} md={7}>
-                        <Row>
+                        <Row className="row-gap-3">
                             <Col lg={6}>
                                 <Box className="about__wrapper--content about__wrapper--border">
                                     <SubHeading>{t("about_heading_2")} </SubHeading>
@@ -30,7 +30,6 @@ const About = () => {
                             </Col>
                         </Row>
                     </Col>
-
                 </Row>
             </Container>
             <Container>

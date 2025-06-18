@@ -5,6 +5,7 @@ import ChangeButton from "../languages/ChangeButton";
 import ServiceCard from "./cards/ServiceCard";
 import StudyCard from "./cards/StudyCard";
 import Form from "./form/Form";
+import Loading from "./Loader.jsx/Loading";
 
 export {
     ErrorPage,
@@ -14,4 +15,5 @@ export {
     ServiceCard,
     StudyCard,
     Form,
+    Loading,
 }

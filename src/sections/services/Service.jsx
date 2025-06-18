@@ -17,12 +17,12 @@ const Service = () => {
                 </Row>
                 <Row className="row-gap-3 mt-5">
                     {serviceData.slice(0, 4).map((item, idx) => (
-                        <Col md={3} sm={6} xs={12} key={idx}>
+                        <Col lg={3} md={6} key={idx}>
                             <ServiceCard {...item} />
                         </Col>
                     ))}
                     {serviceData.slice(4).map((item, idx) => (
-                        <Col md={4} sm={6} xs={12} key={idx}>
+                        <Col lg={4} md={6} key={idx}>
                             <ServiceCard {...item} />
                         </Col>
                     ))}

@@ -9,12 +9,12 @@ const Scholarship = () => {
         <Section id="scholarship">
             <Container>
                 <Box bg={`var(--theme-color)`} className="scholarship__wrapper">
-                    <Row className='align-items-center row-gap-3'>
+                    <Row className='align-items-start row-gap-3'>
                         <Col lg={6}>
-                            <Box className="scholarship__wrapper--content pe-3">
-                                <HeadingStyled color="var(--white)" margin="0 0 22px 0"> {t("scholarships_heading")} </HeadingStyled>
-                                <TextStyled color="var(--white)" margin="0 0 20px 0">{t("scholarships_content1")}</TextStyled>
-                                <TextStyled color="var(--white)" margin="0 0 20px 0">{t("scholarships_content2")}</TextStyled>
+                            <Box className="scholarship__wrapper--content">
+                                <HeadingStyled color="var(--white)" margin="0 0 30px 0"> {t("scholarships_heading")} </HeadingStyled>
+                                <TextStyled color="var(--white)" margin="0 0 30px 0">{t("scholarships_content1")}</TextStyled>
+                                <TextStyled color="var(--white)" margin="0 0 30px 0">{t("scholarships_content2")}</TextStyled>
                                 <TextStyled color="var(--white)">{t("scholarships_content3")}</TextStyled>
                             </Box>
                         </Col>
