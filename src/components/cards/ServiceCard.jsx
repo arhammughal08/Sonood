@@ -26,12 +26,16 @@ const Card = styled.div`
     gap: 20px;
     text-align: center;
     height: 235px;
+    margin:0 12px;
 
     @media(max-width:992px){
-        height: 200px;
+        height: 210px;
+        padding: 30px 16px;
     }
+
     @media(max-width:768px){
-        height: auto;
+        height: 210px;
+        margin:0 6px;
     }
 
     .service__icon {
@@ -43,12 +47,12 @@ const Card = styled.div`
         align-items: center;
         justify-content: center;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        flex-shrink:0;
 
         img{
             width:100%;
             height:100%;
         }
     }
-
 
 `

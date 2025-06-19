@@ -1,14 +1,16 @@
 import { FaPhoneAlt } from 'react-icons/fa'
-import { Box, HeadingStyled, MainTitle, Section, Span, SubHeading, TextStyled } from '../../UI/Elements'
-import { Container, Row } from 'react-bootstrap'
+import { Box, MainTitle, Section, Span, SubHeading, TextStyled } from '../../UI/Elements'
+import { Container } from 'react-bootstrap'
 import { MdEmail } from 'react-icons/md'
-import { FaLocationDot } from 'react-icons/fa6'
 import { socialIcon } from '../../components/data/Data'
 import { Form } from '../../components'
 import { useTranslation } from 'react-i18next'
 
 const ContactUs = () => {
     const { t } = useTranslation();
+    const handleCall = () => {
+        window.location.href = 'tel:+966 590 957 017';
+    };
     return (
         <Section id="contact" className="contact__wrapper">
             <Container>
@@ -20,18 +22,23 @@ const ContactUs = () => {
                     <SubHeading size="24px" color='var(--white)'> {t("contact_banner")}</SubHeading>
                     <Box className='contact__wrapper--info-wrap '>
                         <Box className='contact__wrapper--info-detail'>
-                            <TextStyled color="var(--white)">
+                            <TextStyled cursor="pointer" color="var(--white)">
                                 <FaPhoneAlt size="24px" />
-                                <Span className='contact-No'>+966 123 654 789</Span>
+                                <Span className='contact-No' onClick={handleCall}>+966 590 957 017</Span>
                             </TextStyled>
                             <TextStyled color="var(--white)">
                                 <MdEmail size="24px" />
-                                <Span>johnsmith@gmail.com</Span>
+                                <a href="mailto:Abdulaziz@sonoodEdu.com">Abdulaziz@sonoodEdu.com</a>
                             </TextStyled>
                             <TextStyled color="var(--white)">
+                                <MdEmail size="24px" />
+                                <a href="mailto:Info@sonoodEdu.com">Info@sonoodEdu.com</a>
+                            </TextStyled>
+
+                            {/* <TextStyled color="var(--white)">
                                 <FaLocationDot size="24px" />
                                 <Span>Olaya District, 64965, Riyadh, Kingdom of Saudi Arabia</Span>
-                            </TextStyled>
+                            </TextStyled> */}
                         </Box>
                         <Box className='contact__wrapper--social-icon'>
                             {

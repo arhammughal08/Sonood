@@ -2,6 +2,8 @@ import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./assets/scss/style.css"
 import { I18nextProvider } from 'react-i18next';
 import i18n, { i18nInitialized } from "./languages/INEXT";

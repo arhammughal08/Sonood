@@ -9,7 +9,7 @@ import { Loading } from "../components";
 const ChangeButton = () => {
   const [isLoading, setIsLoading] = useState(false);
   const WhatsApp = () => {
-    const phoneNumber = '+966 000 000 000';
+    const phoneNumber = '+966555557017';
     const message = 'Hello, Sonood';
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');

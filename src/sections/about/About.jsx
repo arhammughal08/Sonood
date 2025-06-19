@@ -4,6 +4,12 @@ import { useTranslation } from "react-i18next";
 
 const About = () => {
     const { t } = useTranslation();
+    const WhatsApp = () => {
+        const phoneNumber = '+966555557017';
+        const message = 'Hello, Sonood';
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
+    };
     return (
         <Section id="about" className="about__wrapper">
             <Container>
@@ -35,7 +41,7 @@ const About = () => {
             <Container>
                 <Box className="about__wrapper--banner">
                     <HeadingStyled color="var(--white)">{t("about_banner")}</HeadingStyled>
-                    <ButtonStyled className="btn btn-primary"> {t("btn")} </ButtonStyled>
+                    <ButtonStyled className="btn btn-primary" onClick={WhatsApp}> {t("btn")} </ButtonStyled>
                 </Box>
             </Container>
         </Section>

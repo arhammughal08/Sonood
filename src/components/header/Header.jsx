@@ -15,16 +15,14 @@ const Header = () => {
     const { t } = useTranslation();
     const [isSticky, setIsSticky] = useState(false);
     const [toggle, setToggle] = useState(false);
+
     const handleToggle = () => {
         setToggle(!toggle);
         const element = document.querySelector(".navbar__nav--wrap");
         element.classList.toggle("showToggle");
     };
-    const WhatsApp = () => {
-        const phoneNumber = '+966533046533';
-        const message = 'Hello, Sonood';
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(whatsappURL, '_blank');
+    const handleCall = () => {
+        window.location.href = 'tel:+966 590 957 017';
     };
 
     useEffect(() => {
@@ -44,7 +42,6 @@ const Header = () => {
 
     return (
         <>
-
             {toggle && <MenuOverlay onClick={handleToggle} />}
             <Navbar className={`${isSticky ? 'sticky' : ''}`}>
                 <Container>
@@ -59,15 +56,15 @@ const Header = () => {
                             <List className='navbar__nav--wrap-list'>
                                 {NavDataConfig.map((item, key) => (
                                     <ListItem key={key} className="navbar__nav--wrap-list-items">
-                                        <Link to={item.to} spy={true} smooth={true} offset={-120} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
+                                        <Link to={item.to} spy={true} smooth={true} offset={-160} duration={500} activeClass="active" onClick={handleToggle}>{t(item.label)}</Link>
                                     </ListItem>
                                 ))}
                             </List>
                         </Box>
                         <Box className='navbar__nav--social'>
-                            <ButtonStyled className="btn btn-primary">
+                            <ButtonStyled className="btn btn-primary" onClick={handleCall}>
                                 <FaPhoneAlt size="24px" />
-                                <Span>+966 000 000 000</Span>
+                                <Span>+966 590 957 017</Span>
                             </ButtonStyled>
                             <Box className='navbar__nav--social-icon'>
                                 {

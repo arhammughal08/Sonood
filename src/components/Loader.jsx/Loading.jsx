@@ -31,7 +31,7 @@ const LoaderWrapper = styled.div`
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.96);
   width: 100vw;
   height: 100vh;
   display: flex;

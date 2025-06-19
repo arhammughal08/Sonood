@@ -21,6 +21,7 @@ import FranceBg from "../assets/images/France-bg.png"
 import HungaryBg from "../assets/images/Hungary-bg.png"
 import MalaysiaBg from "../assets/images/Malaysia-bg.png"
 import ScholarshipImg from "../assets/images/scholarshipImg.png"
+import WorldMap from "../assets/images/world-map.png"
 
 import Service1 from "../assets/images/icons/service1.svg"
 import Service2 from "../assets/images/icons/service2.svg"
@@ -61,5 +62,6 @@ export {
     HungaryBg,
     MalaysiaBg,
     ScholarshipImg,
+    WorldMap,
 
 }

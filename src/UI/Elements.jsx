@@ -21,7 +21,7 @@ export const Section = styled.section`
     background-color: ${({ bg }) => bg ? bg : ''};
     background-image: ${({ bgImg }) => bgImg ? bgImg : ''};
     display: ${props => props.display ? props.display : ''};
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     background-position: ${({ bgPosition }) => bgPosition ? bgPosition : ''};
     background-repeat: ${({ bgRepeat }) => bgRepeat ? bgRepeat : ''};
@@ -30,7 +30,7 @@ export const Section = styled.section`
 
 
 export const SpanStyled = styled.span`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     color:${props => props.color ? props.color : ""};
     line-height: ${props => props.lh ? props.lh : ''};
@@ -41,7 +41,7 @@ export const SpanStyled = styled.span`
     font-family: ${props => props.family ? props.family : ""};
 `
 export const BannerTitle = styled.h1`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     color:${props => props.color ? props.color : ""};
     line-height: ${props => props.lh ? props.lh : ''};
@@ -52,7 +52,7 @@ export const BannerTitle = styled.h1`
     text-transform: ${props => props.transform ? props.transform : ''};
 `
 export const MainTitle = styled.h1`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     color:${props => props.color ? props.color : ""};
     line-height: ${props => props.lh ? props.lh : ''};
@@ -64,7 +64,7 @@ export const MainTitle = styled.h1`
 `
 
 export const HeadingStyled = styled.h2`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     color:${props => props.color ? props.color : ""};
     line-height: ${props => props.lh ? props.lh : ''};
@@ -76,7 +76,7 @@ export const HeadingStyled = styled.h2`
 `
 
 export const SubHeading = styled.h3`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     color:${props => props.color ? props.color : ""};
     line-height: ${props => props.lh ? props.lh : 'normal'};
@@ -88,7 +88,7 @@ export const SubHeading = styled.h3`
 `
 
 export const TextStyled = styled.p`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     line-height: ${props => props.lh ? props.lh : ''};
     font-size:${props => props.size ? props.size : '16px'};
@@ -96,10 +96,11 @@ export const TextStyled = styled.p`
     color:${props => props.color ? props.color : "var(--theme-color)"};
     text-transform: ${props => props.transform ? props.transform : 'math-auto'};
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
+    cursor: ${props => props.cursor ? props.cursor : ''};
 `
 
 export const LabelStyled = styled.label`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     line-height:${props => props.lh ? props.lh : ''};
     font-size:${props => props.size ? props.size : '16px'};
@@ -109,7 +110,7 @@ export const LabelStyled = styled.label`
 `
 
 export const List = styled.ul`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     font-size:${props => props.size ? props.size : ''};
     font-weight: ${props => props.weight ? props.weight : "var(--font-weight-medium)"};
@@ -123,7 +124,7 @@ export const List = styled.ul`
 `
 
 export const ListItem = styled.li`
-    Padding: ${props => props.padding ? props.padding : ''};
+    padding: ${props => props.padding ? props.padding : ''};
     margin: ${props => props.margin ? props.margin : ''};
     font-size:${props => props.size ? props.size : '16px'};
     font-weight: ${props => props.weight ? props.weight : "var(--font-weight-medium)"};

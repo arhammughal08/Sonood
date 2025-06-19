@@ -1,5 +1,6 @@
 {
   "translation": {
+    "TitleName": "سنود",
     "Home": "الصفحة الرئيسية",
     "About": "من نحن",
     "Services": "خدماتنا",
@@ -60,7 +61,7 @@
     "Role": " هل أنت طالب أم شريك؟ ",
     "selectCountry": " الوجهة الدراسية المفضلة ",
     "educationalLevel": " المرحلة الدراسية (بكالوريوس / ماجستير / دكتوراه / أخرى) ",
-    
+
     "yourMessage": "كيف يمكننا مساعدتك؟",
     "messagePlaceholder": " اكتب رسالتك... ",
     "Send": "إرسال",
@@ -76,6 +77,14 @@
     "upload_file": "  الملف مطلوب ",
     "message_error": "الرسالة مطلوبة",
     "Request_send": "تم إرسال الطلب. يرجى الانتظار...",
-    "submission": "تمت عملية الإرسال بنجاح"
+    "submission": "تمت عملية الإرسال بنجاح",
+
+    "name_required": "يرجى إدخال الاسم",
+    "email_required": "يرجى إدخال البريد الإلكتروني",
+    "phone_required": "يرجى إدخال رقم الهاتف",
+    "role_required": "يرجى اختيار الدور",
+    "destination_required": "يرجى اختيار الدولة",
+    "education_required": "يرجى اختيار المستوى التعليمي",
+    "message_required": "يرجى إدخال رسالتك"
   }
 }

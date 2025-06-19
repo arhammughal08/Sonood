@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****************English Fonts***************/
 @font-face {
   font-family: "General Sans";
@@ -392,11 +393,11 @@ body.rtl option {
 }
 
 .service__wrapper {
-  padding: 0 0 80px;
+  padding: 0 0 100px;
 }
 @media (max-width: 768px) {
   .service__wrapper {
-    padding: 0 0 40px;
+    padding-top: 40px;
   }
 }
 .service__wrapper--content {
@@ -413,6 +414,20 @@ body.rtl option {
   .service__wrapper--content {
     width: 100%;
   }
+}
+.service__wrapper .slick-dots {
+  position: relative;
+  top: 20px;
+}
+.service__wrapper .slick-dots li button:before {
+  font-size: 20px;
+  content: "■";
+  opacity: 0.5;
+  color: var(--light-blue);
+}
+.service__wrapper .slick-dots li.slick-active button:before {
+  opacity: 0.9;
+  color: var(--theme-color);
 }
 
 .study__wrapper {
@@ -437,6 +452,43 @@ body.rtl option {
   .study__wrapper--content {
     width: 100%;
   }
+}
+
+.studyDestination__wrapper {
+  background-image: url(../images/world-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--theme-color);
+  padding: 100px 0;
+  margin: 0 0 100px;
+}
+.studyDestination__wrapper--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .studyDestination__wrapper--content {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+.studyDestination__wrapper .slick-dots {
+  position: relative;
+  top: 20px;
+}
+.studyDestination__wrapper .slick-dots li button:before {
+  font-size: 10px;
+  content: "•";
+  opacity: 0.4;
+  color: white;
+}
+.studyDestination__wrapper .slick-dots li.slick-active button:before {
+  opacity: 0.9;
+  color: var(--white);
 }
 
 .scholarship__wrapper {
@@ -520,6 +572,11 @@ body.rtl option {
   gap: 18px;
   margin-top: 16px;
 }
+.contact__wrapper--info-detail a {
+  color: var(--white);
+  pointer-events: auto;
+  color: inherit;
+}
 @media (max-width: 992px) {
   .contact__wrapper--info-detail {
     flex-wrap: wrap;
@@ -601,6 +658,7 @@ body.rtl option {
 .rtl .contact-No {
   direction: ltr;
   unicode-bidi: embed;
+  font-family: var(--primary-font) !important;
 }
 @media (max-width: 1030px) {
   .rtl .navbar__nav--wrap {
@@ -636,4 +694,7 @@ body.rtl option {
 .rtl .form__group svg {
   right: auto !important;
   left: 15px;
+}
+.rtl input[name=phone] {
+  font-family: var(--primary-font);
 }/*# sourceMappingURL=Style.css.map */

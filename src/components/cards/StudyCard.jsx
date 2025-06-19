@@ -29,6 +29,11 @@ const Card = styled.div`
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    margin:0 12px;
+
+    @media(max-width:568px){
+     margin:0 6px;
+    }
 
     .study__icon {
         position:absolute;

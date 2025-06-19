@@ -18,7 +18,7 @@
         @media (max-width:1030px) {
             padding: 0;
             width: 100%;
-            
+
         }
 
         @media (max-width:992px) {
@@ -97,10 +97,10 @@
 }
 
 .service__wrapper {
-    padding: 0 0 80px;
+    padding: 0 0 100px;
 
     @media (max-width:768px) {
-        padding: 0 0 40px;
+        padding-top: 40px;
     }
 
     &--content {
@@ -116,6 +116,27 @@
         @media (max-width:992px) {
             width: 100%;
         }
+    }
+
+    .slick-dots {
+        position: relative;
+        top: 20px;
+
+        li {
+            button {
+                &:before {
+                    font-size: 20px;
+                    content: '■';
+                    opacity: .5;
+                    color: var(--light-blue);
+                }
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: .9;
+        color: var(--theme-color);
     }
 }
 
@@ -139,6 +160,50 @@
         @media (max-width:992px) {
             width: 100%;
         }
+    }
+}
+
+.studyDestination__wrapper {
+    background-image: url(../images/world-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--theme-color);
+    padding: 100px 0;
+    margin: 0 0 100px;
+
+    &--content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        @media(max-width:992px) {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .slick-dots {
+        position: relative;
+        top: 20px;
+
+        li {
+            button {
+                &:before {
+                    font-size: 10px;
+                    content: '•';
+                    opacity: .4;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: .9;
+        color: var(--white);
     }
 }
 
@@ -225,6 +290,12 @@
             align-items: center;
             gap: 18px;
             margin-top: 16px;
+
+            a {
+                color: var(--white);
+                pointer-events: auto;
+                color: inherit;
+            }
 
             @media (max-width:992px) {
                 flex-wrap: wrap;
@@ -322,6 +393,7 @@
     .contact-No {
         direction: ltr;
         unicode-bidi: embed;
+        font-family: var(--primary-font) !important;
     }
 
     .navbar__nav--wrap {
@@ -369,6 +441,10 @@
             left: 15px;
 
         }
+    }
+
+    input[name="phone"] {
+        font-family: var(--primary-font);
     }
 
 }

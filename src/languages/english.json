@@ -1,5 +1,6 @@
 {
   "translation": {
+    "TitleName": "Sonood",
     "Home": "Home",
     "About": "About",
     "Services": "Services",
@@ -70,12 +71,16 @@
     "Developed_by": "Designed & Developed by",
     "Fowl": "Fowl",
 
-    "name_error": "Name is required",
-    "email_error": "Email is required",
-    "phone_error": "Phone number is required ",
-    "upload_file": "  File is required ",
-    "message_error": "Message is required",
+    "message_error": "Submission was wrong! Please try again",
     "Request_send": "Request Send Please Wait...",
-    "submission": "Your submission was successful."
+    "submission": "Your submission was successful.",
+
+    "name_required": "Please enter your name",
+    "email_required": "Please enter your email",
+    "phone_required": "Please enter your phone number",
+    "role_required": "Please select a role",
+    "destination_required": "Please select a country",
+    "education_required": "Please select education level",
+    "message_required": "Please enter your message"
   }
 }
