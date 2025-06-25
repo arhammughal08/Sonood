@@ -26,6 +26,7 @@ const About = () => {
                                 <Box className="about__wrapper--content about__wrapper--border">
                                     <SubHeading>{t("about_heading_2")} </SubHeading>
                                     <TextStyled>{t("about_heading_2_content")}</TextStyled>
+
                                 </Box>
                             </Col>
                             <Col lg={6}>

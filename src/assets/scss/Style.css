@@ -237,12 +237,12 @@ body.rtl {
   font-family: var(--arabic-font);
   font-weight: var(--font-weight-medium);
 }
-body.rtl p,
 body.rtl a,
 body.rtl input,
 body.rtl select,
 body.rtl option {
   font-family: var(--arabic-font);
+  unicode-bidi: isolate;
 }
 
 .btn {

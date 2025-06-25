@@ -97,6 +97,8 @@ export const TextStyled = styled.p`
     text-transform: ${props => props.transform ? props.transform : 'math-auto'};
     letter-spacing: ${props => props.spacing ? props.spacing : ''};
     cursor: ${props => props.cursor ? props.cursor : ''};
+    font-family: ${props => props.direction === 'rtl' && props.family ? props.family : "var(--primary-font)"},
+                ${props => props.direction === 'ltr' && props.family ? props.family : "var(--arabic-font)"};
 `
 
 export const LabelStyled = styled.label`

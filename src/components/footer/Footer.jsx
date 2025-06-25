@@ -38,7 +38,7 @@ export default Footer
 
 const FooterWrap = styled.footer`
     background:var(--theme-color);
-    padding:20px 0;
+    padding:12px 0;
 
     .footer__nav {
 
@@ -55,13 +55,13 @@ const FooterWrap = styled.footer`
 
             background:var(--white);
             border-radius:16px;
-            padding:12px 20px;
+            padding:15px;
                 @media (max-width:450px) {
-                    padding: 8px 12px;
+                    padding: 8px 10px;
                 }
 
             img{
-                width:100px;
+                width:80px;
                 
                 @media (max-width:450px) {
                     width:60px;

@@ -4,8 +4,8 @@
     "Home": "Home",
     "About": "About",
     "Services": "Services",
-    "Aborad": "Study Abroad",
-    "Scholarship": "Scholarship",
+    "Aborad": "Study Destinations",
+    "Scholarship": "Scholarships",
     "Contact_Us": "Contact Us",
 
     "btn": "Contact Us",
@@ -45,9 +45,12 @@
     "scholarships_content2": "As for the scholarship of Saudi students to study abroad, it began during the reign of King Abdulaziz, when a number of students were sent to study in Egypt and the United Kingdom. In 2005, the Custodian of the Two Holy Mosques Scholarship Program was launched for those wishing to pursue undergraduate and graduate education abroad, with the aim of obtaining academic qualifications that meet labor market needs and contribute to the development plans of the Kingdom of Saudi Arabia.",
     "scholarships_content3": "The Custodian of the Two Holy Mosques Scholarship Program has undergone several phases of development. Most recently, four scholarship tracks have been defined, each with specific fields of study and designated universities, detailed on the Ministry of Education’s website. It is worth noting that several ministries and government-owned companies also offer scholarship programs in various disciplines, which lead to employment upon graduation with the sponsoring entity. This provides job security for graduates and enhances the alignment between educational outcomes and labor market needs.",
 
-    "contact_heading": "Start your global journey",
-    "contact_Content": "Please fill out the form below — a Snood advisor will contact you within 24 hours.",
-    "contact_banner": "Do you have questions? We are ready to help you.",
+    "contact_heading": "Start your global study journey with us",
+    "contact_Content": "Please fill out the form below — one of SnowD’s advisors will contact you as soon as possible",
+    "contact_banner": "We are happy to hear from you.",
+    "contact_banner2": "To call during working hours from 9:00 am to 5:00 pm",
+    "calls_during": " ( Calls during working hours ) ",
+    "calls_whatapp": " ( WhatsApp at any time ) ",
 
     "name": "Name",
     "namePlaceholder": "Enter Your Name",
@@ -56,9 +59,9 @@
     "contactPhone": " Phone ",
     "partner": "Partner ",
     "student": "Student  ",
-    "choose": "Choose One ",
+    "choose": "Are you student or not...",
     "phonePlaceholder": "Enter Your Phone",
-    "Role": "Are you a student or partner ? ",
+    "Role": "Are you a student or Partner ? ",
     "selectCountry": "Preferred study destination ",
     "educationalLevel": "Educational level (Bachelor’s/Master’s/PhD/Other)",
 

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { IoIosArrowDown } from 'react-icons/io';
 import { Box, ButtonStyled, LabelStyled, Span } from '../../UI/Elements';
-import { getDestinations, getEducationLevels, getRoles, submitContactForm } from '../../api/Api';
+import { getDestinations, getEducationLevels, submitContactForm } from '../../api/Api';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -18,41 +18,26 @@ const Form = () => {
         name: '',
         email: '',
         phone: '',
-        role: '',
-        roleName: '',
+        // role: '',
         destination: '',
         education_level: '',
         message: '',
     });
 
-    const [roles, setRoles] = useState([]);
     const [destinations, setDestinations] = useState([]);
     const [educationLevels, setEducationLevels] = useState([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        getRoles(i18n.language).then(setRoles);
         getDestinations(i18n.language).then(setDestinations);
         getEducationLevels(i18n.language).then(setEducationLevels);
     }, [i18n.language]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-
-        if (name === 'role') {
-            const selected = roles.find((role) => role.id.toString() === value);
-            setFormData((prev) => ({
-                ...prev,
-                role: value,
-                roleName: selected?.name?.toLowerCase() || '',
-            }));
-        } else {
-            setFormData((prev) => ({ ...prev, [name]: value }));
-        }
+        setFormData((prev) => ({ ...prev, [name]: value }));
     };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    const fetchApi = async () => {
         const form = formRef.current;
 
         if (!form.checkValidity()) {
@@ -66,21 +51,33 @@ const Form = () => {
             name: formData.name,
             email: formData.email,
             phone: formData.phone,
-            role: formData.role,
-            destination: formData.roleName === 'student' ? formData.destination : '',
-            education_level: formData.roleName === 'student' ? formData.education_level : '',
+            // role: formData.role,
+            destination: formData.destination,
+            education_level: formData.education_level,
             message: formData.message,
         };
-
+        console.log('payload: ', payload);
         try {
-            await submitContactForm(payload, i18n.language);
+            const res = await submitContactForm(payload, i18n.language);
+            console.log('res: ', res);
+
+            if (res?.status === 'error' || res?.statusCode >= 400) {
+                const errorMsg = res?.message || t('message_error');
+                const fieldErrors = res?.errors
+                    ? Object.values(res.errors).join(', ')
+                    : '';
+
+                toast.error(`${errorMsg}${fieldErrors ? `: ${fieldErrors}` : ''}`);
+                return;
+            }
+
             toast.success(t('submission'));
+
             setFormData({
                 name: '',
                 email: '',
                 phone: '',
-                role: '',
-                roleName: '',
+                // role: '',
                 destination: '',
                 education_level: '',
                 message: '',
@@ -88,10 +85,16 @@ const Form = () => {
             setValidated(false);
         } catch (error) {
             console.error('error', error);
-            toast.error(t('message_error'));
+            const apiMsg = error?.response?.data?.message || error?.message || t('message_error');
+            toast.error(apiMsg);
         } finally {
             setLoading(false);
         }
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        fetchApi()
     };
 
     return (
@@ -116,6 +119,7 @@ const Form = () => {
                         <Span className="invalid-feedback">{t('name_required')}</Span>
                     </Box>
                 </Col>
+
                 <Col lg={6}>
                     <Box className="form__group">
                         <LabelStyled>{t('email')}</LabelStyled>
@@ -131,6 +135,7 @@ const Form = () => {
                         <Span className="invalid-feedback">{t('email_required')}</Span>
                     </Box>
                 </Col>
+
                 <Col lg={6}>
                     <Box className="form__group">
                         <LabelStyled>{t('contactPhone')}</LabelStyled>
@@ -145,74 +150,64 @@ const Form = () => {
                         <Span className="invalid-feedback">{t('phone_required')}</Span>
                     </Box>
                 </Col>
-                <Col lg={6}>
+                {/* <Col lg={6}>
                     <Box className="form__group">
                         <LabelStyled>{t('Role')}</LabelStyled>
-                        <select
+                        <input
                             className="form__group--control"
                             name="role"
                             value={formData.role}
                             onChange={handleChange}
+                            placeholder={t('choose')}
+                            required
+                        />
+                        <Span className="invalid-feedback">{t('role_required')}</Span>
+                    </Box>
+                </Col> */}
+
+                <Col lg={6}>
+                    <Box className="form__group">
+                        <LabelStyled>{t('selectCountry')}</LabelStyled>
+                        <select
+                            className="form__group--control"
+                            name="destination"
+                            value={formData.destination}
+                            onChange={handleChange}
                             required
                         >
-                            <option value="" hidden>{t('choose')}</option>
-                            {roles.map((role) => (
-                                <option key={role.id} value={role.id}>
-                                    {i18n.language === 'ar' ? role.name_ar : role.name}
+                            <option value="" hidden>{t('selectCountry')}</option>
+                            {destinations.map((dest) => (
+                                <option key={dest.id} value={dest.id}>
+                                    {i18n.language === 'ar' ? dest.name_ar : dest.name}
                                 </option>
                             ))}
                         </select>
                         <IoIosArrowDown />
-                        <Span className="invalid-feedback">{t('role_required')}</Span>
+                        <Span className="invalid-feedback">{t('destination_required')}</Span>
                     </Box>
                 </Col>
 
-                {formData.roleName === 'student' && (
-                    <>
-                        <Col lg={6}>
-                            <Box className="form__group">
-                                <LabelStyled>{t('selectCountry')}</LabelStyled>
-                                <select
-                                    className="form__group--control"
-                                    name="destination"
-                                    value={formData.destination}
-                                    onChange={handleChange}
-                                    required
-                                >
-                                    <option value="" hidden>{t('selectCountry')}</option>
-                                    {destinations.map((dest) => (
-                                        <option key={dest.id} value={dest.id}>
-                                            {i18n.language === 'ar' ? dest.name_ar : dest.name}
-                                        </option>
-                                    ))}
-                                </select>
-                                <IoIosArrowDown />
-                                <Span className="invalid-feedback">{t('destination_required')}</Span>
-                            </Box>
-                        </Col>
-                        <Col lg={6}>
-                            <Box className="form__group">
-                                <LabelStyled>{t('educationalLevel')}</LabelStyled>
-                                <select
-                                    className="form__group--control"
-                                    name="education_level"
-                                    value={formData.education_level}
-                                    onChange={handleChange}
-                                    required
-                                >
-                                    <option value="" hidden>{t('educationalLevel')}</option>
-                                    {educationLevels.map((level) => (
-                                        <option key={level.id} value={level.id}>
-                                            {i18n.language === 'ar' ? level.name_ar : level.name}
-                                        </option>
-                                    ))}
-                                </select>
-                                <IoIosArrowDown />
-                                <Span className="invalid-feedback">{t('education_required')}</Span>
-                            </Box>
-                        </Col>
-                    </>
-                )}
+                <Col lg={6}>
+                    <Box className="form__group">
+                        <LabelStyled>{t('educationalLevel')}</LabelStyled>
+                        <select
+                            className="form__group--control"
+                            name="education_level"
+                            value={formData.education_level}
+                            onChange={handleChange}
+                            required
+                        >
+                            <option value="" hidden>{t('educationalLevel')}</option>
+                            {educationLevels.map((level) => (
+                                <option key={level.id} value={level.id}>
+                                    {i18n.language === 'ar' ? level.name_ar : level.name}
+                                </option>
+                            ))}
+                        </select>
+                        <IoIosArrowDown />
+                        <Span className="invalid-feedback">{t('education_required')}</Span>
+                    </Box>
+                </Col>
 
                 <Col lg={12}>
                     <Box className="form__group">
@@ -239,6 +234,7 @@ const Form = () => {
                         {loading ? t('Sending...') : t('Send')}
                     </ButtonStyled>
                 </Col>
+
                 <ToastContainer position="bottom-center" />
             </Row>
         </FormWrap>
