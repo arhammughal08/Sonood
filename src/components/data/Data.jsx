@@ -1,5 +1,5 @@
 import { RiTwitterXLine } from "react-icons/ri";
-import { America, AmericaBg, Australia, AustraliaBg, Britain, BritainBg, Canada, CanadaBg, France, FranceBg, Germany, GermanyBg, Hungary, HungaryBg, Malaysia, MalaysiaBg, Service1, Service2, Service3, Service4, Service5, Service6, Service7 } from "../../UI/AllImages"
+import { America, AmericaBg, Australia, AustraliaBg, Britain, BritainBg, Canada, CanadaBg, France, FranceBg, Germany, GermanyBg, Hungary, HungaryBg, Ireland, IrelandBg, Malaysia, MalaysiaBg, NewZeland, NewZelandBg, Service1, Service2, Service3, Service4, Service5, Service6, Service7 } from "../../UI/AllImages"
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 
@@ -104,7 +104,16 @@ export const studyData = [
         img: MalaysiaBg,
         text: "Malaysia",
     },
-
+    {
+        icon: Ireland,
+        img: IrelandBg,
+        text: "Ireland",
+    },
+    {
+        icon: NewZeland,
+        img: NewZelandBg,
+        text: "NewZeland",
+    }
 ]
 
 

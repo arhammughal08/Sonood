@@ -2,18 +2,13 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 import Cookies from "js-cookie";
-import { LazyImage } from "../UI/Elements";
+import { ButtonStyled, LazyImage, Span } from "../UI/Elements";
 import { ArabicLogo, EnglishLogo, WhatsAppLogo } from "../UI/AllImages";
 import { Loading } from "../components";
 
 const ChangeButton = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const WhatsApp = () => {
-    const phoneNumber = '+966555557017';
-    const message = 'Hello, Sonood';
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
-  };
+
   const { i18n } = useTranslation();
   const [isEnglishSelected, setIsEnglishSelected] = useState(
     Cookies.get("lang") === "en" ? false : true
@@ -66,23 +61,25 @@ const ChangeButton = () => {
     <>
       {isLoading && <Loading />}
       <ButtonBox>
-        <span className="whatsapp" onClick={WhatsApp}>
+        {/* <span className="whatsapp" onClick={WhatsApp}>
           <LazyImage src={WhatsAppLogo} />
-        </span>
+        </span> */}
         {isEnglishSelected ? (
-          <span
-            className="change-Btn"
+          <Span
+            className="change-Btn btn btn-primary"
+            family="var(--primary-font)"
             onClick={() => handleLanguageChange("en", "ltr")}
           >
-            <LazyImage src={EnglishLogo} className="english_icon" alt="USA" />
-          </span>
+            {/* <LazyImage src={EnglishLogo} className="english_icon" alt="USA" />  */} English
+          </Span>
         ) : (
-          <span
-            className="change-Btn"
+          <Span
+            className="change-Btn btn btn-primary"
+            family="var(--arabic-font)"
             onClick={() => handleLanguageChange("ar", "rtl")}
           >
-            <LazyImage src={ArabicLogo} className="arabic_icon" alt="Arabic" />
-          </span>
+            {/* <LazyImage src={ArabicLogo} className="arabic_icon" alt="Arabic" /> */} عربي
+          </Span>
         )}
       </ButtonBox>
     </>
@@ -92,26 +89,11 @@ const ButtonBox = styled.div`
   padding: 0 20px;
   cursor: pointer;
   z-index: 1;
-  .whatsapp {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 1;
 
-     @media (max-width:568px) {
-      width:40px;
-      height:40px;
-    }
+  @media (max-width:768px) {
+      padding: 0;
   }
-  .change-Btn {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    @media (max-width:568px) {
-      width:40px;
-      height:40px;
-    }
-  }
+ 
   .english_icon {
     border-radius: 50%;
     cursor: pointer;

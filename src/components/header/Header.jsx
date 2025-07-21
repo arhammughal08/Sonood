@@ -9,6 +9,7 @@ import { BsJustify, BsX } from "react-icons/bs";
 import { MenuOverlay, Navbar } from "./Styled";
 import { Logo } from "../../UI/AllImages";
 import { useNavigate } from "react-router-dom";
+import ChangeButton from "../../languages/ChangeButton";
 
 const Header = () => {
     const navigate = useNavigate()
@@ -77,9 +78,11 @@ const Header = () => {
                                     ))
                                 }
                             </Box>
+                            <ChangeButton />
                             <Span className="toggleBtn" onClick={handleToggle}>
                                 {toggle ? <BsX size={30} /> : <BsJustify size={30} />}
                             </Span>
+
                         </Box>
                     </Box>
                 </Container>

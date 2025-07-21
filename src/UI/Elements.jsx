@@ -6,6 +6,7 @@ export const Box = styled.div`
 `
 export const Span = styled.span`
     background-color: ${({ bg }) => bg ? bg : ''};
+      font-family:${props => props.family ? props.family : ''};
 `
 
 export const LazyImage = (props) => {
@@ -142,6 +143,7 @@ export const ListItem = styled.li`
 export const ButtonStyled = styled.button`
     font-size:${props => props.size ? props.size : '18px'};
     font-weight:${props => props.weight ? props.weight : 'var(--font-weight-medium)'};
+    font-family:${props => props.family ? props.family : ''};
     background:${props => props.bg ? props.bg : "none"};
     color: ${props => props.color ? props.color : ""};
     padding: ${props => props.padding ? props.padding : ""};

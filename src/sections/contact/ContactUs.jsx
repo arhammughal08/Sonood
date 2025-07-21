@@ -36,14 +36,14 @@ const ContactUs = () => {
                         <Box className='contact__wrapper--info-detail'>
                             <TextStyled cursor="pointer" color="var(--white)">
                                 <FaPhoneAlt size="24px" />
-                                <Span className=' d-flex gap-2 align-items-center' >
+                                <Span className=' d-flex gap-2 align-items-center flex-wrap' >
                                     {t("calls_during")}
                                     <Span className='contact-No' onClick={handleCall}> +966 590 957 017</Span>
                                 </Span>
                             </TextStyled>
                             <TextStyled cursor="pointer" color="var(--white)">
                                 <FaWhatsapp size="24px" />
-                                <Span className=' d-flex gap-2 align-items-center' >
+                                <Span className=' d-flex gap-2 align-items-center flex-wrap' >
                                     {t("calls_whatapp")}
                                     <Span className='contact-No' onClick={WhatsApp}>+966 555 557 017</Span>
                                 </Span>
@@ -51,7 +51,7 @@ const ContactUs = () => {
                             <TextStyled color="var(--white)">
                                 <MdEmail size="24px" />
                                 <Span className='d-flex flex-column align-items-start'>
-                                    <a href="mailto:Info@sonoodEdu.com">Info@sonoodEdu.com</a>
+                                    <a href="mailto:info@sonoodedu.com">info@sonoodedu.com</a>
                                 </Span>
                             </TextStyled>
 

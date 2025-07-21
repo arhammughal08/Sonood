@@ -244,6 +244,10 @@ body.rtl option {
   font-family: var(--arabic-font);
   unicode-bidi: isolate;
 }
+body.rtl .whatsapp {
+  right: auto;
+  left: 10px;
+}
 
 .btn {
   font-weight: var(--font-weight-bold);
@@ -659,16 +663,6 @@ body.rtl option {
   direction: ltr;
   unicode-bidi: embed;
   font-family: var(--primary-font) !important;
-}
-@media (max-width: 1030px) {
-  .rtl .navbar__nav--wrap {
-    right: auto !important;
-    left: 0 !important;
-    transform: translateX(-100%) !important;
-  }
-  .rtl .navbar__nav--wrap.showToggle {
-    transform: translateX(0) !important;
-  }
 }
 .rtl .about__wrapper--banner {
   background-image: url(../images/logoBgAr.png);

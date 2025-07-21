@@ -398,17 +398,17 @@
         font-family: var(--primary-font) !important;
     }
 
-    .navbar__nav--wrap {
-        @media (max-width:1030px) {
-            right: auto !important;
-            left: 0 !important;
-            transform: translateX(-100%) !important;
+    // .navbar__nav--wrap {
+    //     @media (max-width:1030px) {
+    //         right: auto !important;
+    //         left: 0 !important;
+    //         transform: translateX(-100%) !important;
 
-            &.showToggle {
-                transform: translateX(0) !important;
-            }
-        }
-    }
+    //         &.showToggle {
+    //             transform: translateX(0) !important;
+    //         }
+    //     }
+    // }
 
     .about__wrapper {
         &--banner {

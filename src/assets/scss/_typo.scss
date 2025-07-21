@@ -156,12 +156,17 @@ body.rtl {
     font-weight: var(--font-weight-medium);
 
 
-    
+
     a,
     input,
     select,
     option {
         font-family: var(--arabic-font);
         unicode-bidi: isolate;
+    }
+
+    .whatsapp {
+        right: auto;
+        left: 10px ;
     }
 }

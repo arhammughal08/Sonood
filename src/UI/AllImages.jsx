@@ -12,6 +12,8 @@ import Canada from "../assets/images/icons/Canada.png"
 import France from "../assets/images/icons/France.png"
 import Hungary from "../assets/images/icons/Hungary.png"
 import Malaysia from "../assets/images/icons/Malaysia.png"
+import NewZeland from "../assets/images/icons/new-zeland.png"
+import Ireland from "../assets/images/icons/ireland.png"
 import BritainBg from "../assets/images/Britain-bg.png"
 import AustraliaBg from "../assets/images/Australia-bg.png"
 import AmericaBg from "../assets/images/America-bg.png"
@@ -20,6 +22,8 @@ import CanadaBg from "../assets/images/Canada-bg.png"
 import FranceBg from "../assets/images/France-bg.png"
 import HungaryBg from "../assets/images/Hungary-bg.png"
 import MalaysiaBg from "../assets/images/Malaysia-bg.png"
+import NewZelandBg from "../assets/images/new-zeland-bg.png"
+import IrelandBg from "../assets/images/ireland-bg.png"
 import ScholarshipImg from "../assets/images/scholarshipImg.png"
 import WorldMap from "../assets/images/world-map.png"
 
@@ -63,5 +67,9 @@ export {
     MalaysiaBg,
     ScholarshipImg,
     WorldMap,
+    NewZeland,
+    Ireland,
+    NewZelandBg,
+    IrelandBg,
 
 }
